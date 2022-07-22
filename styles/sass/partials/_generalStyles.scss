@@ -2,7 +2,7 @@ body {
     background: #000;
 }
 
-div {
+main {
     color: #5dea62;
     font-family: Monaco, monospace;
     font-size: 24px;
@@ -15,7 +15,7 @@ div {
 }
 
 span {
-    animation: 1.5s infinite normal imleç;
+    animation: 1.5s infinite normal load;
 }
 
 ::-moz-selection {
@@ -41,7 +41,7 @@ span {
     }
 }
 
-@keyframes imleç {
+@keyframes load {
     0% {
         opacity: 0;
         left: 0;

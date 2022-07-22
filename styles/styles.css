@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -240,7 +239,7 @@ body {
   background: #000;
 }
 
-div {
+main {
   color: #5dea62;
   font-family: Monaco, monospace;
   font-size: 24px;
@@ -254,8 +253,8 @@ div {
 }
 
 span {
-  -webkit-animation: 1.5s infinite normal imleç;
-          animation: 1.5s infinite normal imleç;
+  -webkit-animation: 1.5s infinite normal load;
+          animation: 1.5s infinite normal load;
 }
 
 ::-moz-selection {
@@ -289,7 +288,7 @@ span {
     left: -2px;
   }
 }
-@-webkit-keyframes imleç {
+@-webkit-keyframes load {
   0% {
     opacity: 0;
     left: 0;
@@ -303,7 +302,7 @@ span {
     left: -2px;
   }
 }
-@keyframes imleç {
+@keyframes load {
   0% {
     opacity: 0;
     left: 0;
