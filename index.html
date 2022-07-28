@@ -46,7 +46,7 @@
 
             <!-- Nav content -->
             <nav>
-                <!-- social media links -->
+                <!-- nav content links -->
                 <ul class="navLinks">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -85,6 +85,13 @@
                         </li>
 
                         <li>
+                            <a href="https://calendly.com/chxw/30min">
+                                <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                                <span class="sr-only">Link to calendly</span>
+                            </a>
+                        </li>
+
+                        <li>
                             <a href="https://www.behance.net/chxw">
                                 <i class="fa-brands fa-behance" aria-hidden="true">
                                     <span class="sr-only">Link to behance</span>
@@ -118,7 +125,9 @@
                 <div class="aboutTextContainer">
                     <h4>Oh, hello there. Thanks for stopping by my corner of the web. I'm <span>Chow Chen</span>, a creative soul residing in the Greater Toronto Area.</h4>
 
-                    <p>I'm a Front-End Web Developer currently using my tech stack in order to bring my creative ideas to life. I come from a background of graphic design and retail management. I have a strong eye for visual design, effective visual communication, user experience design, and solving problems quick on my feet. I hope to combine my design knowledge together with code in order to develop meaningful and beautiful web applications. Besides coding, you can find me playing Apex Legends with my friends, building mechanical keyboards, or sipping bubble tea.</p>
+                    <p>I'm a Front-End Web Developer currently using my tech stack in order to bring my creative ideas to life. I come from a background of graphic design and retail management. I have a strong eye for visual design, effective visual communication, user experience design, and solving problems quick on my feet. I hope to combine my design knowledge together with code in order to develop meaningful and beautiful web applications.</p>
+                        
+                    <p>&lt;aside&gt; from coding, you can find me playing Apex Legends with my friends, building mechanical keyboards, or sipping bubble tea.</p>
                 </div> <!--END aboutTextContainer-->
             </div> <!--END wrapper-->
         </section> <!--END about section-->
@@ -139,7 +148,7 @@
                 <li><i class="fa-solid fa-universal-access"></i>Accessibility</li>
                 <li><i class="fa-solid fa-crop-simple"></i>Responsive Design</li>
                 <li><i class="devicon-photoshop-plain"></i>Adobe Suites</li>
-                <li><i class="devicon-figma-plain"></i>Figma</li>
+                <li><i class="fa-brands fa-figma"></i>Figma</li>
                 <li><i class="fa-solid fa-pen-nib"></i>UI/UX Design</li>
             </ul>
         </section>
@@ -201,7 +210,7 @@
                         <h3>What's 4 Dinnr?</h3>
                         <p class="projectTools">HTML5 / Sass / jQuery /REST API</p>
                 
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sint amet perferendis? Tempore, provident? Repudiandae praesentium mollitia debitis voluptates et!</p>
+                        <p>Can't decide on what to make for dinner? Let this app decide for you based on what you have in your fridge. It also considers your calories and diet restrictions.</p>
                 
                         <a href="https://gamelogoquiz.netlify.app/">View live</a>
                         <a href="https://github.com/chxwcodes/gameStudioQuiz">View repo</a>
@@ -209,12 +218,84 @@
                     <!--END projectTextContainer-->
                 </article>
                 <!--END project 3-->
-
-                
-
             </div> <!--END wrapper-->
         </section> <!--END PROJECT SECTION-->
     </main> <!--END MAIN SECTION-->
+
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <!-- CONTACT FORM SECTION -->
+        <section id="contact">
+            <div class="wrapper">
+                <h2>Contact</h2>
+
+                <!-- CONTACT TEXT CONTAINER -->
+                <div class="contactTextContainer">
+                    <h4>Why hi, we meet again.</h4>
+                    
+                    <h4>Feel free to drop an email regarding my projects, talk about games, or if you just want to have a chat over some boba.</h4>
+
+                    <!-- FOOTER SOCIAL LINKS -->
+                    <div class="footerSocialLinks">
+                        <ul class="footerLinks">
+                            <li>
+                                <a href="https://github.com/chxwcodes">
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                    <span class="sr-only">Link to github</span>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://www.linkedin.com/in/chxw/">
+                                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                                    <span class="sr-only">Link to linkedin</span>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://calendly.com/chxw/30min">
+                                    <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                                    <span class="sr-only">Link to calendly</span>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://www.behance.net/chxw">
+                                    <i class="fa-brands fa-behance" aria-hidden="true">
+                                        <span class="sr-only">Link to behance</span>
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!--END footersociallinks-->
+                </div> <!--END contacttextcontainer-->
+
+                <!-- CONTACT FORM -->
+                <form action="">
+                    <!-- name input -->
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" id="name" placeholder="Name" required>
+
+                    <!-- email input -->
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" placeholder="Email" required>
+
+                    <!-- message input -->
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea id="message" cols="30" rows="10" placeholder="Chow I found your Easter Egg"></textarea>
+
+                    <!-- submit btn -->
+                    <button type="submit" class="redButton">Send Message</button>
+                </form> <!--END form-->
+            </div><!--END wrapper-->
+        </section> <!--END Contact form section-->
+        
+        <!-- COPYRIGHT TEXT -->
+        <div class="wrapper">
+            <p class="copyright">&copy; Chow Chen 2022</p>
+        </div> <!--END copyright text-->
+    </footer> <!--END footer-->
 </body>
 
 
