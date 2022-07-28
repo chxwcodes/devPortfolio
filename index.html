@@ -23,6 +23,9 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/acf2ac11d5.js" crossorigin="anonymous"></script>
 
+    <!-- dev icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="./styles/styles.css">
 
@@ -46,8 +49,8 @@
                 <!-- social media links -->
                 <ul class="navLinks">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul> <!--END navLinks-->
             </nav> <!--END nav content-->
@@ -113,21 +116,33 @@
 
                 <!-- about text container -->
                 <div class="aboutTextContainer">
-                    <!-- main text container -->
-                    <div class="mainAboutText">
-                        <p>Oh, hello there. Thanks for stopping by my corner of the web. I'm <span>Chow Chen</span>, a creative soul residing in the Greater Toronto Area.</p>
+                    <h4>Oh, hello there. Thanks for stopping by my corner of the web. I'm <span>Chow Chen</span>, a creative soul residing in the Greater Toronto Area.</h4>
 
-                        <!-- button to navigate to skills -->
-                        <a href="#skills" class="redButton">View skills</a>
-                    </div> <!--END main text container-->
-
-                    <!-- secondary text container -->
-                    <div class="sideAboutText">
-                        <p>I'm a Front-End Web Developer currently using my tech stack in order to bring my creative ideas to life. I come from a background of graphic design and retail management. I have a strong eye for visual design, effective visual communication, user experience design, and solving problems quick on my feet. I hope to combine my design knowledge together with code in order to develop meaningful and beautiful web applications. Besides coding, you can find me playing Apex Legends with my friends, building mechanical keyboards, or sipping bubble tea.</p>
-                    </div> <!--END secondary text container-->
+                    <p>I'm a Front-End Web Developer currently using my tech stack in order to bring my creative ideas to life. I come from a background of graphic design and retail management. I have a strong eye for visual design, effective visual communication, user experience design, and solving problems quick on my feet. I hope to combine my design knowledge together with code in order to develop meaningful and beautiful web applications. Besides coding, you can find me playing Apex Legends with my friends, building mechanical keyboards, or sipping bubble tea.</p>
                 </div> <!--END aboutTextContainer-->
             </div> <!--END wrapper-->
         </section> <!--END about section-->
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <ul>
+                <li><i class="fa-brands fa-html5"></i>HTML5</li>
+                <li><i class="fa-brands fa-css3-alt"></i>CSS3</li>
+                <li><i class="fa-brands fa-sass"></i>Sass</li>
+                <li><i class="fa-brands fa-square-js"></i>Javascript</li>
+                <li><i class="devicon-jquery-plain"></i>jQuery</li>
+                <li><i class="devicon-firebase-plain"></i>Firebase</li>
+                <li><i class="devicon-react-original"></i>React</li>
+                <li><i class="fa-brands fa-git-alt"></i>Git</li>
+                <li><i class="fa-brands fa-github"></i>Github</li>
+                <li><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
+                <li><i class="fa-solid fa-universal-access"></i>Accessibility</li>
+                <li><i class="fa-solid fa-crop-simple"></i>Responsive Design</li>
+                <li><i class="devicon-photoshop-plain"></i>Adobe Suites</li>
+                <li><i class="devicon-figma-plain"></i>Figma</li>
+                <li><i class="fa-solid fa-pen-nib"></i>UI/UX Design</li>
+            </ul>
+        </section>
 
 
         <!-- PROJECTS SECTION -->
@@ -137,8 +152,65 @@
                 
                 <!-- PROJECT 1 -->
                 <article class="workitem">
-                
+                    <!-- project image -->
+                    <div class="projectImgContainer">
+                        <img src="http://placekitten.com/200/200" alt="">
+                    </div> <!--END projectImgContainer-->
+
+                    <!-- project text -->
+                    <div class="projectTextContainer">
+                        <h3>Urban Score</h3>
+                        <p class="projectTools">HTML5 / Sass / Javascript /REST API / Pair Programming</p>
+
+                        <p>Urban City REST API app that gives a city a score based on the selected city's quality of life. It measures everything from housing to education.</p>
+
+                        <a href="https://urban-score.netlify.app/">View live</a>
+                        <a href="https://github.com/Max-Chow-project2/urban-score">View repo</a>
+                    </div> <!--END projectTextContainer-->
                 </article><!--END project 1-->
+
+                <!-- PROJECT 2 -->
+                <article class="workitem">
+                    <!-- project image -->
+                    <div class="projectImgContainer">
+                        <img src="http://placekitten.com/200/200" alt="">
+                    </div> <!--END projectImgContainer-->
+
+                    <!-- project 2 text -->
+                    <div class="projectTextContainer">
+                        <h3>GameLogo+</h3>
+                        <p class="projectTools">HTML5 / Sass / jQuery /Photoshop</p>
+
+                        <p>A fun quiz that tests your knowledge of video game studios' logos. Logos have been altered with Photoshop to be extra hard.</p>
+
+                        <a href="https://gamelogoquiz.netlify.app/">View live</a>
+                        <a href="https://github.com/chxwcodes/gameStudioQuiz">View repo</a>
+                    </div> <!--END projectTextContainer-->
+                </article><!--END project 2-->
+
+                <!-- PROJECT 3 -->
+                <article class="workitem">
+                    <!-- project image -->
+                    <div class="projectImgContainer">
+                        <img src="http://placekitten.com/200/200" alt="">
+                    </div>
+                    <!--END projectImgContainer-->
+                
+                    <!-- project 3 text -->
+                    <div class="projectTextContainer">
+                        <h3>What's 4 Dinnr?</h3>
+                        <p class="projectTools">HTML5 / Sass / jQuery /REST API</p>
+                
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sint amet perferendis? Tempore, provident? Repudiandae praesentium mollitia debitis voluptates et!</p>
+                
+                        <a href="https://gamelogoquiz.netlify.app/">View live</a>
+                        <a href="https://github.com/chxwcodes/gameStudioQuiz">View repo</a>
+                    </div>
+                    <!--END projectTextContainer-->
+                </article>
+                <!--END project 3-->
+
+                
 
             </div> <!--END wrapper-->
         </section> <!--END PROJECT SECTION-->
