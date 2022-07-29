@@ -28,19 +28,18 @@
     text-transform: uppercase;
     font-family: $headerFont;
     @include flexRow;
+    align-items: center;
     
     li {
         margin-left: 30px;
-        border-bottom: 4px solid transparent;
-        transition: color, border-bottom 0.7s;
+        transition: color 0.4s;
         
         &:first-child {
             margin-left: none;
         }
 
         &:hover {
-            border-bottom: 4px solid $cyan;
-            color: $red;
+            color: $cyan;
         }
     }
 

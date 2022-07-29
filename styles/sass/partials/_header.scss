@@ -1,0 +1,38 @@
+header {  
+    background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+    padding: 100px 0;
+
+    .wrapper {
+        @include flexRow;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.headerTextContainer {
+    width: 25vw;
+    border: 2px solid red;
+}
+
+.socialLinks {
+    @include flexRow;
+    align-items: center;
+    
+    i {
+        font-size: 1.3rem;
+        background-color: $cyan;
+        color: $white;
+        padding: 10px;
+        border-radius: 50%;
+        height: 2.5rem;
+        width: 2.5rem;
+        text-align: center;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    li {
+        margin-right: 20px;
+    }
+}
