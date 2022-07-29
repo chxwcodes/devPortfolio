@@ -257,7 +257,6 @@ h1 {
   text-align: center;
   color: #fbfafa;
   font-size: 4rem;
-  line-height: 3.5rem;
 }
 
 h2 {
@@ -321,11 +320,20 @@ img {
   max-width: 1260px;
   width: 90%;
   margin: 0 auto;
+  border: 2px solid blue;
+}
+
+button {
+  border: none;
+  font-family: "Open Sans", sans-serif;
+}
+button:hover {
+  cursor: pointer;
 }
 
 .redButton {
-  display: inline-block;
-  background-color: #ed1e24;
+  display: block;
+  background-color: #fa3c64;
   color: #fbfafa;
   padding: 10px 20px;
   border-radius: 5px;
@@ -336,13 +344,13 @@ img {
   transition: background-color 0.4s, color 0.4s, border 0.4s;
 }
 .redButton:hover {
-  color: #ed1e24;
+  color: #fa3c64;
   background-color: transparent;
-  border: 2px solid #ed1e24;
+  border: 2px solid #fa3c64;
 }
 
 .cyanButton {
-  display: inline-block;
+  display: block;
   background-color: #40cae0;
   color: #001220;
   padding: 10px 20px;
@@ -354,9 +362,27 @@ img {
   transition: background-color 0.4s, color 0.4s, border 0.4s;
 }
 .cyanButton:hover {
-  color: #ed1e24;
+  color: #40cae0;
   background-color: transparent;
   border: 2px solid #40cae0;
+}
+
+.cyanButtonOutline {
+  display: block;
+  background-color: transparent;
+  color: #40cae0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid #40cae0;
+  -webkit-transition: background-color 0.4s, color 0.4s, border 0.4s;
+  transition: background-color 0.4s, color 0.4s, border 0.4s;
+}
+.cyanButtonOutline:hover {
+  color: #001220;
+  background-color: #40cae0;
+  border: 2px solid transparent;
 }
 
 .skipLink {
@@ -438,6 +464,13 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .wrapper {
   display: -webkit-box;
@@ -453,13 +486,47 @@ header .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  padding: 100px 0;
 }
 
 .headerTextContainer {
-  border: 2px solid red;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .socialLinks {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.socialLinks i {
+  color: rgba(251, 250, 250, 0.8);
+  text-align: right;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.socialLinks i:hover {
+  color: #40cae0;
+}
+.socialLinks li {
+  margin-bottom: 30px;
+}
+.socialLinks li:last-child {
+  margin-bottom: 0;
+}
+
+.CTALinks {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,12 +534,9 @@ header .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-.socialLinks li {
-  margin-right: 20px;
+.CTALinks button {
+  margin-left: 20px;
 }
 
 .skills {

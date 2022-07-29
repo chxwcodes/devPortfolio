@@ -37,10 +37,20 @@ img {
     max-width: 1260px;
     width: 90%;
     margin: 0 auto;
+    border: 2px solid blue;
+}
+
+button {
+    border: none;
+    font-family: $bodyFont;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .redButton {
-    @include buttonStyle($red, $white);
+    @include buttonStyle($red, $white, transparent);
 
     &:hover {
         color: $red;
@@ -50,11 +60,22 @@ img {
 }
 
 .cyanButton {
-    @include buttonStyle($cyan, $black);
+    @include buttonStyle($cyan, $black, transparent);
 
     &:hover {
-        color: $red;
+        color: $cyan;
         background-color: transparent;
         border: 2px solid $cyan;
     }
 }
+
+.cyanButtonOutline {
+    @include buttonStyle (transparent, $cyan, $cyan);
+
+    &:hover {
+        color: $black;
+        background-color: $cyan;
+        border: 2px solid transparent;
+    }
+}
+

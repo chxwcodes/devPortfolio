@@ -3,23 +3,56 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
 
     .wrapper {
         @include flexRow;
         justify-content: center;
         align-items: center;
+        position: relative;
+        padding: 100px 0;
     }
 }
 
 .headerTextContainer {
-    border: 2px solid red;
+    width: 70%;
+    @include flexCol;
+    align-items: center;
 }
 
 .socialLinks {
-    @include flexRow;
-    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     
+
+    i {
+        color: rgba($white, 0.8);
+        text-align: right;
+        transition: color 0.4s;
+
+        &:hover {
+            color: $cyan;
+        }
+    }
+
     li {
-        margin-right: 20px;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
+
+.CTALinks {
+    margin-top: 50px;
+    @include flexRow;
+    
+    button {
+        margin-left: 20px;
+    }
+}
+

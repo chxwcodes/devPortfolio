@@ -8,14 +8,14 @@
     flex-direction: column;
 }
 
-@mixin buttonStyle ($bgColor, $color) {
-    display: inline-block;
+@mixin buttonStyle ($bgColor, $color, $borderColor) {
+    display: block;
     background-color: $bgColor;
     color: $color;
     padding: 10px 20px;
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: 700;
-    border: 2px solid transparent;
+    border: 2px solid $borderColor;
     transition: background-color 0.4s, color 0.4s, border 0.4s;
 }
