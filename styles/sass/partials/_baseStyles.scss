@@ -40,18 +40,21 @@ img {
 }
 
 .redButton {
-    display: inline-block;
-    background-color: $red;
-    color: $white;
-    padding: 4px 10px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    border: 2px solid transparent;
-    transition: background-color 0.4s, color 0.4s, border 0.4s;
+    @include buttonStyle($red, $white);
 
     &:hover {
-        color: $red !important;
+        color: $red;
         background-color: transparent;
         border: 2px solid $red;
+    }
+}
+
+.cyanButton {
+    @include buttonStyle($cyan, $black);
+
+    &:hover {
+        color: $red;
+        background-color: transparent;
+        border: 2px solid $cyan;
     }
 }

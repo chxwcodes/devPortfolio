@@ -24,9 +24,10 @@
 }
 
 .navLinks {
+    font-size: 1.4rem;
     color: $white;
     text-transform: uppercase;
-    font-family: $headerFont;
+    font-weight: 700;
     @include flexRow;
     align-items: center;
     
@@ -40,6 +41,21 @@
 
         &:hover {
             color: $cyan;
+        }
+    }
+
+    .specialNav {
+        color: $black;
+        background-color: $cyan;
+        padding: 3px 15px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        transition: background-color 0.4s, color 0.4s, border 0.4s;
+
+        &:hover {
+            color: $cyan;
+            background-color: transparent;
+            border: 2px solid $cyan;
         }
     }
 

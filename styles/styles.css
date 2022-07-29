@@ -242,18 +242,20 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #101011;
+  color: #001220;
   margin: 0;
 }
 
 h1, h2, h3, h4 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  color: #101011;
+  color: #001220;
   margin: 0;
 }
 
 h1 {
+  text-align: center;
+  color: #fbfafa;
   font-size: 4rem;
   line-height: 3.5rem;
 }
@@ -325,24 +327,43 @@ img {
   display: inline-block;
   background-color: #ed1e24;
   color: #fbfafa;
-  padding: 4px 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   text-transform: uppercase;
+  font-weight: 700;
   border: 2px solid transparent;
   -webkit-transition: background-color 0.4s, color 0.4s, border 0.4s;
   transition: background-color 0.4s, color 0.4s, border 0.4s;
 }
 .redButton:hover {
-  color: #ed1e24 !important;
+  color: #ed1e24;
   background-color: transparent;
   border: 2px solid #ed1e24;
+}
+
+.cyanButton {
+  display: inline-block;
+  background-color: #40cae0;
+  color: #001220;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid transparent;
+  -webkit-transition: background-color 0.4s, color 0.4s, border 0.4s;
+  transition: background-color 0.4s, color 0.4s, border 0.4s;
+}
+.cyanButton:hover {
+  color: #ed1e24;
+  background-color: transparent;
+  border: 2px solid #40cae0;
 }
 
 .skipLink {
   position: absolute;
   left: -1000px;
   top: 5px;
-  background-color: #101011;
+  background-color: #001220;
   color: #40cae0;
   z-index: 10;
 }
@@ -367,9 +388,10 @@ img {
 }
 
 .navLinks {
+  font-size: 1.4rem;
   color: #fbfafa;
   text-transform: uppercase;
-  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,15 +414,30 @@ img {
 .navLinks li:hover {
   color: #40cae0;
 }
+.navLinks .specialNav {
+  color: #001220;
+  background-color: #40cae0;
+  padding: 3px 15px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  -webkit-transition: background-color 0.4s, color 0.4s, border 0.4s;
+  transition: background-color 0.4s, color 0.4s, border 0.4s;
+}
+.navLinks .specialNav:hover {
+  color: #40cae0;
+  background-color: transparent;
+  border: 2px solid #40cae0;
+}
 
 .logoImgContainer {
   width: 2rem;
 }
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#a9c9ff), to(#ffbbec));
-  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
-  padding: 100px 0;
+  background-image: url("../images/blob-bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 header .wrapper {
   display: -webkit-box;
@@ -419,7 +456,6 @@ header .wrapper {
 }
 
 .headerTextContainer {
-  width: 25vw;
   border: 2px solid red;
 }
 
@@ -434,24 +470,6 @@ header .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.socialLinks i {
-  font-size: 1.3rem;
-  background-color: #40cae0;
-  color: #fbfafa;
-  padding: 10px;
-  border-radius: 50%;
-  height: 2.5rem;
-  width: 2.5rem;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .socialLinks li {
   margin-right: 20px;
