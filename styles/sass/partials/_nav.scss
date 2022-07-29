@@ -11,3 +11,41 @@
         left: 0;
     }
 }
+
+.navBar {
+    background-image: url(../images/background-pattern.jpg);
+    padding: 15px 0;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.navLinks {
+    color: $white;
+    text-transform: uppercase;
+    font-family: $headerFont;
+    @include flexRow;
+    
+    li {
+        margin-left: 30px;
+        border-bottom: 4px solid transparent;
+        transition: color, border-bottom 0.7s;
+        
+        &:first-child {
+            margin-left: none;
+        }
+
+        &:hover {
+            border-bottom: 4px solid $cyan;
+            color: $red;
+        }
+    }
+
+}
+
+.logoImgContainer {
+    width: 2rem;
+}
