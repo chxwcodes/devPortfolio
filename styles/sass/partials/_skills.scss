@@ -1,3 +1,44 @@
 .skills {
     background-image: url(../images/background-pattern.jpg);
+    color: $white;
+
+    h2 {
+        color: $white;
+        position: relative;
+        z-index: 10;
+
+        &::after {
+            @include highlight($red);
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    li {
+        @include flexCol;
+        align-items: center;
+        width: 120px;
+    }
+
+    i {
+        font-size: 1.8rem;
+        background-color: $cyan;
+        color: $black;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
 }
