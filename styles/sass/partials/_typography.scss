@@ -10,28 +10,29 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: $headingFont;
+    font-family: $headerFont;
     font-weight: 700;
-    color: $primary;
+    color: $black;
     margin: 0;
 }
 
 h1 {
-    font-size: clamp(1.913rem, calc(12px + 2.475vw), 2.587rem);
+    font-size: 4.5rem;
 }
 
 h2 {
-    font-size: clamp(1.575rem, calc(12px + 1.800vw), 2.025rem);
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: clamp(1.282rem, calc(12px + 1.350vw), 1.688rem);
+    font-size: 2.5rem;
 }
 
 h4 {
-    font-size: clamp(1.125rem, calc(12px + 0.900vw), 1.350rem);
+    font-size: 1.6rem;
 }
 
 p {
-    font-size: clamp(1.035rem, calc(12px + 0.540vw), 1.125rem);
+    font-size: 1rem;
+    margin: 0;
 }

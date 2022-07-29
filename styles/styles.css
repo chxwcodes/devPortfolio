@@ -234,3 +234,95 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #101011;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Ubuntu" sans-serif;
+  font-weight: 700;
+  color: #101011;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+  border: 3px solid #40cae0;
+}
+
+::-moz-selection {
+  background: #40cae0;
+}
+
+::selection {
+  background: #40cae0;
+}
+
+ul,
+li,
+a,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  background-color: #101011;
+  color: #40cae0;
+  z-index: 10;
+}
+.skipLink:focus {
+  left: 0;
+}
