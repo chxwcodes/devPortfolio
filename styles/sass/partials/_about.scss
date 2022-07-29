@@ -1,0 +1,44 @@
+.aboutContent {
+    @include flexCol;
+    align-items: center;
+}
+
+.aboutImgContainer {
+    margin-bottom: 20px;
+}
+
+.aboutTextContainer {
+    @include flexRow;
+    width: 70%;
+    justify-content: space-between;
+
+
+    h4 {
+        text-align: right;
+        width: 33%;
+    }
+
+    p {
+        width: 65%;
+    }
+
+    span {
+        position: relative;
+        color: $white;
+
+        &::after {
+            @include highlight($red);
+            height: 100%;
+            transform: rotate(0deg);
+            bottom: 0;
+        }
+    }
+}
+
+code {
+    position: relative;
+
+    &::after {
+        @include highlight($cyan);
+    }
+}

@@ -13,6 +13,7 @@ body {
 }
 
 h1, h2, h3, h4 {
+    display: inline-block;
     font-family: $headerFont;
     font-weight: 700;
     color: $black;
@@ -27,6 +28,12 @@ h1 {
 
 h2 {
     font-size: 2.75rem;
+    position: relative;
+    margin-bottom: 50px;
+
+    &::after {
+        @include highlight($cyan);
+    }
 }
 
 h3 {
@@ -35,7 +42,7 @@ h3 {
 
 h4,
 .navLinks {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 p {

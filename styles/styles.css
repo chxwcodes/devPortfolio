@@ -247,6 +247,7 @@ body {
 }
 
 h1, h2, h3, h4 {
+  display: inline-block;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   color: #001220;
@@ -261,6 +262,20 @@ h1 {
 
 h2 {
   font-size: 2.75rem;
+  position: relative;
+  margin-bottom: 50px;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  z-index: -10;
+  background-color: #40cae0;
+  width: 100%;
+  height: 50%;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
 }
 
 h3 {
@@ -269,7 +284,7 @@ h3 {
 
 h4,
 .navLinks {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 p {
@@ -321,6 +336,10 @@ img {
   width: 90%;
   margin: 0 auto;
   border: 2px solid blue;
+}
+
+section {
+  padding: 150px 0;
 }
 
 button {
@@ -537,6 +556,80 @@ header .wrapper {
 }
 .CTALinks button {
   margin-left: 20px;
+}
+
+.aboutContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutImgContainer {
+  margin-bottom: 20px;
+}
+
+.aboutTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.aboutTextContainer h4 {
+  text-align: right;
+  width: 33%;
+}
+.aboutTextContainer p {
+  width: 65%;
+}
+.aboutTextContainer span {
+  position: relative;
+  color: #fbfafa;
+}
+.aboutTextContainer span::after {
+  content: "";
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  z-index: -10;
+  background-color: #fa3c64;
+  width: 100%;
+  height: 50%;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  height: 100%;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  bottom: 0;
+}
+
+code {
+  position: relative;
+}
+code::after {
+  content: "";
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  z-index: -10;
+  background-color: #40cae0;
+  width: 100%;
+  height: 50%;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
 }
 
 .skills {
