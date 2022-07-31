@@ -34,7 +34,7 @@ img {
 }
 
 .wrapper {
-    max-width: 1260px;
+    max-width: 1250px;
     width: 90%;
     margin: 0 auto;
 }
@@ -66,9 +66,9 @@ button {
     @include buttonStyle($cyan, $black, transparent);
 
     &:hover {
-        color: $cyan;
-        background-color: transparent;
-        border: 2px solid $cyan;
+        color: $white;
+        background-color: $red;
+        border: 2px solid $red;
     }
 }
 
@@ -76,9 +76,19 @@ button {
     @include buttonStyle (transparent, $cyan, $cyan);
 
     &:hover {
-        color: $black;
-        background-color: $cyan;
-        border: 2px solid transparent;
+        color: $red;
+        background-color: transparent;
+        border: 2px solid $red;
+    }
+}
+
+.blackButtonOutline {
+    @include buttonStyle (transparent, $black, $black);
+
+    &:hover {
+        color: $cyan;
+        background-color: transparent;
+        border: 2px solid $cyan;
     }
 }
 

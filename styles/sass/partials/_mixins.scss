@@ -9,7 +9,7 @@
 }
 
 @mixin buttonStyle ($bgColor, $color, $borderColor) {
-    display: block;
+    display: inline-block;
     background-color: $bgColor;
     color: $color;
     padding: 10px 20px;

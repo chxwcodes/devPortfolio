@@ -1,0 +1,39 @@
+.workItem {
+    @include flexRow;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:nth-child(odd) {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+
+    .projectImgContainer {
+        width: 40%;
+    }
+
+    .projectTextContainer {
+        width: 58%;
+
+        h3 {
+            display: block;
+        }
+
+        .projectTools {
+            margin: 0;
+            display: inline-block;
+            background-color: $gray;
+            
+        }
+
+        p {
+            margin: 20px 0;
+        }
+    }
+}
