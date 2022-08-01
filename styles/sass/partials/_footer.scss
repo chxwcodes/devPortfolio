@@ -1,0 +1,73 @@
+footer {
+    .wrapper {
+        @include flexCol;
+        align-items: center;
+    }
+
+    h4 {
+        color: $white;
+        margin-bottom: 20px;
+    }
+}
+
+.footerContainer {
+    @include flexRow;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.contactTextContainer {
+    @include flexCol;
+    align-items: flex-end;
+    width: 30%;
+    text-align: right;
+}
+
+
+
+.footerLinks {
+    gap: 10px;
+    justify-content: flex-end;
+    margin: 0;
+
+    li {
+        flex-direction: row;
+        width: 40px;
+    }
+
+    i {
+        width: 40px;
+        height: 40px;
+        font-size: 0.8rem;
+        margin-bottom: 0;
+        transition: background-color 0.4s;
+        
+        &:hover {
+            background-color: $gray;
+        }
+    }
+    
+}
+
+form {
+    width: 65%;
+    @include flexCol;
+    align-items: flex-start;
+
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        border: none;
+        padding: 10px 15px;
+        border-bottom: 5px solid $gray;
+        font-family: $bodyFont;
+    }
+}
+
+.copyright {
+    font-size: 0.8rem;
+    text-align: center;
+    color: $gray;
+    padding: 5px 0;
+}

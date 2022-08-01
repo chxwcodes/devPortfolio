@@ -1,12 +1,3 @@
-*:focus {
-    outline: none;
-    border: 3px solid $cyan;
-}
-
-::selection {
-    background: $cyan;
-}
-
 body {
     background-color: $white;
 }

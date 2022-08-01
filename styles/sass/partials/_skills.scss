@@ -1,4 +1,5 @@
-.skills {
+.skills,
+footer {
     background-image: url(../images/background-pattern.jpg);
     color: $white;
 
@@ -11,17 +12,18 @@
             @include highlight($red);
         }
     }
+}
 
-    ul {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
-        gap: 50px;
-        width: 70%;
-        margin: 0 auto;
-    }
+.skills ul,
+.footerLinks {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 70%;
+    margin: 0 auto;
 
     li {
         @include flexCol;
@@ -42,3 +44,6 @@
         margin-bottom: 5px;
     }
 }
+
+
+
