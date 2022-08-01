@@ -408,6 +408,23 @@ button:hover {
   border: 2px solid #40cae0;
 }
 
+@-webkit-keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .skipLink {
   position: absolute;
   left: -1000px;
@@ -428,8 +445,8 @@ button:hover {
   top: 0;
   right: 0;
   left: 0;
-  -webkit-transition: background-color 0.4s ease-in-out;
-  transition: background-color 0.4s ease-in-out;
+  -webkit-transition: background-color 0.7s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
 }
 .navBar .wrapper {
   display: -webkit-box;
@@ -522,6 +539,20 @@ header .wrapper {
           align-items: center;
   position: relative;
   padding: 150px 0;
+}
+header span {
+  position: relative;
+}
+header span::after {
+  content: "";
+  background-color: #b5c8ca;
+  height: 100%;
+  width: 3px;
+  position: absolute;
+  bottom: 0;
+  right: -5%;
+  -webkit-animation: blinking 0.5s linear infinite alternate;
+          animation: blinking 0.5s linear infinite alternate;
 }
 
 .headerTextContainer {
