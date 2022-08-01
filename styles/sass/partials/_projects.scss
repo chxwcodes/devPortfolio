@@ -1,3 +1,7 @@
+.projects {
+    padding-top: 0;
+}
+
 .workItem {
     @include flexRow;
     justify-content: space-between;
