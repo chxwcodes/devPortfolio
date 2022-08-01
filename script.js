@@ -1,7 +1,7 @@
 const portfolio = {};
 
 portfolio.spanEl = document.querySelector('#typewriter');
-portfolio.wordArray = ['Designer', 'Creator', 'Learner', 'Foodie'];
+portfolio.wordArray = ['Designer.', 'Creator.', 'Learner.', 'Foodie.'];
 
 portfolio.typeWord = async (word) => {
     const letters = word.split('');
