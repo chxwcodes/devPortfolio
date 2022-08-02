@@ -254,14 +254,15 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
-h1 {
+h1, .h1 {
+  font-family: "Ubuntu", sans-serif;
   text-align: center;
   color: #fbfafa;
-  font-size: 4rem;
+  font-size: clamp(1.75rem, 1.3rem + 2.25vw, 4rem);
 }
 
 h2 {
-  font-size: 2.75rem;
+  font-size: clamp(1.55rem, 1.31rem + 1.2vw, 2.75rem);
   position: relative;
   margin-bottom: 50px;
 }
@@ -279,12 +280,12 @@ h2::after {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 1.04rem + 0.8vw, 2rem);
 }
 
 h4,
 .navLinks {
-  font-size: 1.2rem;
+  font-size: clamp(1.15rem, 1.14rem + 0.05vw, 1.2rem);
 }
 
 p {
@@ -425,6 +426,26 @@ button:hover {
     opacity: 0;
   }
 }
+@-webkit-keyframes scrolling {
+  0% {
+    opacity: 1;
+    top: 10%;
+  }
+  100% {
+    opacity: 0;
+    top: 60%;
+  }
+}
+@keyframes scrolling {
+  0% {
+    opacity: 1;
+    top: 10%;
+  }
+  100% {
+    opacity: 0;
+    top: 60%;
+  }
+}
 .skipLink {
   position: absolute;
   left: -1000px;
@@ -435,6 +456,10 @@ button:hover {
 }
 .skipLink:focus {
   left: 0;
+}
+
+.hamburger {
+  display: none;
 }
 
 .navBar {
@@ -517,7 +542,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -616,6 +641,32 @@ header span::after {
 }
 .CTALinks button {
   margin-left: 20px;
+}
+
+.mouse {
+  width: 40px;
+  height: 65px;
+  border: 3px solid #b5c8ca;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.mouse::before {
+  content: "";
+  width: 5px;
+  height: 10px;
+  background-color: #b5c8ca;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50px;
+  -webkit-animation: scrolling 1.5s ease-in-out infinite;
+          animation: scrolling 1.5s ease-in-out infinite;
 }
 
 .aboutContent {
@@ -919,6 +970,7 @@ footer h4 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin: 0;
+  width: 100%;
 }
 .footerLinks li {
   -webkit-box-orient: horizontal;
@@ -967,4 +1019,94 @@ form textarea {
   text-align: center;
   color: #b5c8ca;
   padding: 5px 0;
+}
+
+@media (max-width: 1000px) {
+  header::after {
+    height: 150px;
+    background-size: 100% 150px;
+  }
+  .aboutTextContainer {
+    width: 90%;
+  }
+  .about {
+    padding: 50px 0 0 0;
+  }
+  .footerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactTextContainer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footerLinks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  form {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .about .wrapper,
+.skills .wrapper,
+.projects .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header::after {
+    height: 100px;
+    background-size: 100% 100px;
+  }
+  .aboutTextContainer {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutTextContainer h4 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .aboutTextContainer p {
+    width: 100%;
+  }
+  .workItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .workItem:nth-child(odd) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  .workItem .projectImgContainer,
+.workItem .projectTextContainer {
+    width: 65%;
+  }
 }
