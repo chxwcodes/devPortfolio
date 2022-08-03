@@ -1268,7 +1268,8 @@ footer::before {
     background-size: 100% 100px;
   }
   .navBar {
-    padding: 20px 10px 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .skills ul {
     width: 100%;
