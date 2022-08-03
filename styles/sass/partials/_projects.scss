@@ -18,13 +18,12 @@
         text-align: right;
     }
 
-    .projectImgContainer {
-        width: 40%;
+    .projectImgContainer,
+    .projectTextContainer {
+        width: 49%;
     }
 
     .projectTextContainer {
-        width: 58%;
-
         h3 {
             display: block;
         }

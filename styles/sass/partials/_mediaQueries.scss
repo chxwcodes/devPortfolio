@@ -8,6 +8,10 @@
     }
 
     //ABOUT SECTION
+    .aboutContent {
+        padding: 20px 0;
+    }
+    
     .aboutTextContainer {
         width: 90%;
     }
@@ -48,6 +52,59 @@
         }
     }
 
+    //NAV SECTION
+    .mobileMenu {
+        display: block;
+    }
+
+    .navLinks {
+        font-size: 1.5rem;
+        color: $cyan;
+        flex-direction: column;
+        align-items: flex-start;
+        background-image: url(../images/background-pattern.jpg);
+        position: fixed;
+        right: -1000px;
+        top: 0;
+        width: 100%;
+        max-width: 450px;
+        height: 100vh;
+        padding: 120px 50px;
+        box-shadow: -5px 0 5px rgba($color: $white, $alpha: 0.05);
+        transition: right 0.7s ease-in-out;
+
+        li {
+            margin-bottom: 20px;
+            
+            &:hover { 
+                color: $red;     
+            }
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .specialNav {
+            color: $cyan;
+            background-color: transparent;
+            padding: 0;
+            border: none;
+
+            &:hover {
+                color: $red;
+                border: none;
+                padding: 0;
+            }
+        }
+    }
+
+    .showMenu {
+        right: 0;
+    }
+
+
     //HEADER SECTION
     header::after {
         height: 100px;
@@ -70,6 +127,17 @@
         }
     }
 
+    //SKILLS SECTION
+    .skills ul {
+        width: 90%;
+
+        i {
+            font-size: 1.5rem;
+            width: 50px;
+            height: 50px;
+        }
+    }
+
     //PROJECT SECTION
     .workItem {
         flex-direction: column;
@@ -81,7 +149,82 @@
 
         .projectImgContainer,
         .projectTextContainer {
-            width: 65%;
+            width: 100%;
         }
+    }
+}
+
+@media (max-width: 700px) {
+    //HEADER SECTION
+    header {
+        height: 100vh;
+    }
+
+    .CTALinks {
+        flex-direction: column;
+
+        a:first-child {
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .wrapper {
+        width: 95%;
+    }
+
+    //slated bgs
+    .skills::before,
+    .skills::after,
+    footer::before {
+        height: 100px;
+        background-size: 100% 100px;
+    }
+
+    //NAV SECTION
+    .navBar {
+        padding: 20px 10px 0 10px;
+    }
+
+    //SKILLS SECTION
+    .skills ul {
+        width: 100%;
+        gap: 20px;
+
+        i {
+            font-size: 1.1rem;
+            width: 40px;
+            height: 40px;
+
+        }
+    }
+
+    //PROJECT SECTION
+    .projectLinks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .workItem a{
+        text-align: center;
+
+        &:last-child {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+
+    //FOOTER SECTION
+    .footerContainer {
+        width: 100%;
     }
 }

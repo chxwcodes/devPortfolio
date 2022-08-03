@@ -315,7 +315,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -452,18 +452,19 @@ button:hover {
   top: 5px;
   background-color: #001220;
   color: #40cae0;
-  z-index: 100;
+  z-index: 10000;
 }
 .skipLink:focus {
   left: 0;
 }
 
-.hamburger {
+.mobileMenu {
+  z-index: 9000;
   display: none;
 }
 
 .navBar {
-  z-index: 100;
+  z-index: 1000;
   background-color: transparent;
   padding: 15px 0;
   padding-top: 20px;
@@ -537,12 +538,80 @@ button:hover {
   width: 2rem;
 }
 
+.mobileMenu {
+  position: relative;
+  width: 40px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.topBun,
+.meat,
+.bottomBun {
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #fbfafa;
+  position: absolute;
+}
+
+.topBun {
+  top: 0;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+  -webkit-transition: background-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.meat {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.bottomBun {
+  bottom: 0;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+  -webkit-transition: background-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.topBunClosed {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  width: 111%;
+  background-color: #fa3c64;
+}
+
+.meatClosed {
+  opacity: 0;
+}
+
+.bottomBunClosed {
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  width: 111%;
+  background-color: #fa3c64;
+}
+
 header {
   background-image: url("../images/blob-bg-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -577,7 +646,6 @@ header .wrapper {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: 150px 0;
 }
 header span {
   position: relative;
@@ -880,11 +948,9 @@ footer h2::after {
           flex-direction: row-reverse;
   text-align: right;
 }
-.workItem .projectImgContainer {
-  width: 40%;
-}
+.workItem .projectImgContainer,
 .workItem .projectTextContainer {
-  width: 58%;
+  width: 49%;
 }
 .workItem .projectTextContainer h3 {
   display: block;
@@ -1026,6 +1092,9 @@ form textarea {
     height: 150px;
     background-size: 100% 150px;
   }
+  .aboutContent {
+    padding: 20px 0;
+  }
   .aboutTextContainer {
     width: 90%;
   }
@@ -1073,6 +1142,56 @@ form textarea {
         -ms-flex-align: center;
             align-items: center;
   }
+  .mobileMenu {
+    display: block;
+  }
+  .navLinks {
+    font-size: 1.5rem;
+    color: #40cae0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-image: url(../images/background-pattern.jpg);
+    position: fixed;
+    right: -1000px;
+    top: 0;
+    width: 100%;
+    max-width: 450px;
+    height: 100vh;
+    padding: 120px 50px;
+    -webkit-box-shadow: -5px 0 5px rgba(251, 250, 250, 0.05);
+            box-shadow: -5px 0 5px rgba(251, 250, 250, 0.05);
+    -webkit-transition: right 0.7s ease-in-out;
+    transition: right 0.7s ease-in-out;
+  }
+  .navLinks li {
+    margin-bottom: 20px;
+  }
+  .navLinks li:hover {
+    color: #fa3c64;
+  }
+  .navLinks a {
+    display: inline-block;
+    padding: 10px;
+  }
+  .navLinks .specialNav {
+    color: #40cae0;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+  }
+  .navLinks .specialNav:hover {
+    color: #fa3c64;
+    border: none;
+    padding: 0;
+  }
+  .showMenu {
+    right: 0;
+  }
   header::after {
     height: 100px;
     background-size: 100% 100px;
@@ -1092,6 +1211,14 @@ form textarea {
   .aboutTextContainer p {
     width: 100%;
   }
+  .skills ul {
+    width: 90%;
+  }
+  .skills ul i {
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+  }
   .workItem {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1107,6 +1234,68 @@ form textarea {
   }
   .workItem .projectImgContainer,
 .workItem .projectTextContainer {
-    width: 65%;
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    height: 100vh;
+  }
+  .CTALinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .CTALinks a:first-child {
+    margin-bottom: 10px;
+  }
+  .CTALinks button {
+    margin-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  h2 {
+    margin-bottom: 20px;
+  }
+  .wrapper {
+    width: 95%;
+  }
+  .skills::before,
+.skills::after,
+footer::before {
+    height: 100px;
+    background-size: 100% 100px;
+  }
+  .navBar {
+    padding: 20px 10px 0 10px;
+  }
+  .skills ul {
+    width: 100%;
+    gap: 20px;
+  }
+  .skills ul i {
+    font-size: 1.1rem;
+    width: 40px;
+    height: 40px;
+  }
+  .projectLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .workItem a {
+    text-align: center;
+  }
+  .workItem a:last-child {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .footerContainer {
+    width: 100%;
   }
 }

@@ -59,9 +59,36 @@ portfolio.navBarToggle = () => {
     })
 }
 
+portfolio.mobileMenu = () => {
+    const hamEl = document.querySelector('#hamburger');
+    const menuEl = document.querySelector('#navLinks');
+    const topbunEl = document.querySelector('.topBun');
+    const meatEl = document.querySelector('.meat');
+    const botbunEl = document.querySelector('.bottomBun');
+
+    hamEl.addEventListener('click', function() {
+        menuEl.classList.toggle('showMenu');
+        topbunEl.classList.toggle('topBunClosed');
+        meatEl.classList.toggle('meatClosed');
+        botbunEl.classList.toggle('bottomBunClosed');
+    })
+
+    //closing the menu: through links
+    const navLinks = document.querySelectorAll('#navLinks li');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            menuEl.classList.toggle('showMenu');
+            topbunEl.classList.toggle('topBunClosed');
+            meatEl.classList.toggle('meatClosed');
+            botbunEl.classList.toggle('bottomBunClosed');
+        })
+    })
+}
+
 portfolio.init = () => {
     portfolio.typewriterEffect(portfolio.wordArray);
     portfolio.navBarToggle();
+    portfolio.mobileMenu();
 }
 
 portfolio.init();
