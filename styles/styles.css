@@ -293,6 +293,10 @@ p {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fbfafa;
 }
@@ -315,6 +319,11 @@ a {
 }
 
 img {
+  width: 100%;
+  display: block;
+}
+
+video {
   width: 100%;
   display: block;
 }
@@ -875,7 +884,7 @@ footer h2::after {
   color: #001220;
   width: 65px;
   height: 65px;
-  border-radius: 50%;
+  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
