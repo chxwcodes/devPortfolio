@@ -13,11 +13,16 @@
     }
     
     .aboutTextContainer {
-        width: 90%;
+        width: 100%;
     }
 
     .about {
         padding: 50px 0 0 0;
+    }
+
+    //SKILLS SECTION
+    .skills ul {
+        width: 100%;
     }
 
     //FOOTER
@@ -113,7 +118,6 @@
 
     //ABOUT SECTION
     .aboutTextContainer {
-        width: 100%;
         flex-direction: column;
 
         h4 {
@@ -128,14 +132,10 @@
     }
 
     //SKILLS SECTION
-    .skills ul {
-        width: 90%;
-
-        i {
-            font-size: 1.5rem;
-            width: 50px;
-            height: 50px;
-        }
+    .skills ul i {
+        font-size: 1.5rem;
+        width: 50px;
+        height: 50px;
     }
 
     //PROJECT SECTION

@@ -1105,10 +1105,13 @@ form textarea {
     padding: 20px 0;
   }
   .aboutTextContainer {
-    width: 90%;
+    width: 100%;
   }
   .about {
     padding: 50px 0 0 0;
+  }
+  .skills ul {
+    width: 100%;
   }
   .footerContainer {
     -webkit-box-orient: vertical;
@@ -1206,7 +1209,6 @@ form textarea {
     background-size: 100% 100px;
   }
   .aboutTextContainer {
-    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1219,9 +1221,6 @@ form textarea {
   }
   .aboutTextContainer p {
     width: 100%;
-  }
-  .skills ul {
-    width: 90%;
   }
   .skills ul i {
     font-size: 1.5rem;

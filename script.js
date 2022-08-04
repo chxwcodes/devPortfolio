@@ -66,6 +66,7 @@ portfolio.mobileMenu = () => {
     const meatEl = document.querySelector('.meat');
     const botbunEl = document.querySelector('.bottomBun');
 
+    //opening the slideout menu
     hamEl.addEventListener('click', function() {
         menuEl.classList.toggle('showMenu');
         topbunEl.classList.toggle('topBunClosed');
@@ -82,6 +83,17 @@ portfolio.mobileMenu = () => {
             meatEl.classList.toggle('meatClosed');
             botbunEl.classList.toggle('bottomBunClosed');
         })
+    })
+
+    //closing the menu by clicking anywhere
+    document.addEventListener('click', function(e) {
+        console.log(e.target)
+        if (e.target.id !== 'hamburger' && e.target.id !== 'navLinks') {
+            menuEl.classList.remove('showMenu');
+            topbunEl.classList.remove('topBunClosed');
+            meatEl.classList.remove('meatClosed');
+            botbunEl.classList.remove('bottomBunClosed');
+        }
     })
 }
 
