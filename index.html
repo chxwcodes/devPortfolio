@@ -142,9 +142,9 @@
         <!-- PROJECTS SECTION -->
         <section id="projects" class="projects">
             <div class="wrapper">
-                <h2>My Projects</h2>
-                
+                <h2>My Projects</h2>               
 
+                <!-- JS POPULATE PROJECT GOES HERE :) -->
             </div> <!--END wrapper-->
         </section> <!--END PROJECT SECTION-->
     </main> <!--END MAIN SECTION-->
@@ -192,15 +192,15 @@
                     <form action="https://formspree.io/f/mqkjzwgo" method="POST">
                         <!-- name input -->
                         <label for="name" class="sr-only">Name</label>
-                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="text" id="name" placeholder="Name" name="name" required>
                     
                         <!-- email input -->
                         <label for="email" class="sr-only">Email</label>
-                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="email" id="email" placeholder="Email" name="email" required>
                     
                         <!-- message input -->
                         <label for="message" class="sr-only">Message</label>
-                        <textarea id="message" cols="30" rows="10" placeholder="I found the Easter Egg in your portfolio :^)"></textarea>
+                        <textarea id="message" cols="30" rows="10" placeholder="I found the Easter Egg in your portfolio :^)" name="message"></textarea>
                     
                         <!-- submit btn -->
                         <button type="submit" class="redButton">Send Message</button>

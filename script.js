@@ -86,13 +86,19 @@ portfolio.mobileMenu = () => {
     })
 
     //closing the menu by clicking anywhere
-    document.addEventListener('click', function(e) {
-        if (e.target.id !== 'hamburger' && e.target.id !== 'navLinks') {
-            menuEl.classList.remove('showMenu');
-            topbunEl.classList.remove('topBunClosed');
-            meatEl.classList.remove('meatClosed');
-            botbunEl.classList.remove('bottomBunClosed');
-        }
+    window.addEventListener('click', function () {
+        menuEl.classList.remove('showMenu');
+        topbunEl.classList.remove('topBunClosed');
+        meatEl.classList.remove('meatClosed');
+        botbunEl.classList.remove('bottomBunClosed');
+    })
+
+    menuEl.addEventListener('click', function (e) {
+        e.stopPropagation();
+    })
+    
+    hamEl.addEventListener('click', function (e) {
+        e.stopPropagation();
     })
 }
 
