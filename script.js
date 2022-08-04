@@ -145,8 +145,8 @@ portfolio.populateProjects = () => {
             <p>${project.desc}</p>
 
             <div class="projectLinks">
-                <a href=${project.liveURL} class="cyanButton">View live</a>
-                <a href=${project.repoURL} class="blackButtonOutline">View repo</a>
+                <a href=${project.liveURL} class="cyanButton" target="_blank">View live</a>
+                <a href=${project.repoURL} class="blackButtonOutline" target="_blank">View repo</a>
             </div>
         </div>
         `;
@@ -154,11 +154,40 @@ portfolio.populateProjects = () => {
     })
 }
 
+portfolio.handleFormSubmission = () => {
+    const formEl = document.querySelector('#form');
+
+    async function handleSubmit(e) {
+        e.preventDefault();
+        const buttonEl = document.querySelector("#sendEmail");
+        const data = new FormData(e.target);
+        
+        fetch(e.target.action, {
+            method: form.meythod,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                buttonEl.innerText = "Email sent!";
+                form.reset();
+            } else {
+                throw new Error (response.statusText);
+            }
+        }).catch(error => {
+            alert(error.message);
+        });
+    }
+    formEl.addEventListener("submit", handleSubmit);
+}
+
 portfolio.init = () => {
     portfolio.typewriterEffect(portfolio.wordArray);
     portfolio.navBarToggle();
     portfolio.mobileMenu();
     portfolio.populateProjects();
+    portfolio.handleFormSubmission();
 }
 
 portfolio.init();
