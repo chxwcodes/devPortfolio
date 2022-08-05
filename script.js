@@ -163,14 +163,14 @@ portfolio.handleFormSubmission = () => {
         const data = new FormData(e.target);
         
         fetch(e.target.action, {
-            method: form.meythod,
+            method: form.method,
             body: data,
             headers: {
                 'Accept': 'application/json'
             }
         }).then(response => {
             if (response.ok) {
-                buttonEl.innerText = "Email sent!";
+                buttonEl.innerText = "Email sent";
                 form.reset();
             } else {
                 throw new Error (response.statusText);
