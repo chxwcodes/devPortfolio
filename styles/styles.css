@@ -993,6 +993,13 @@ footer h2::after {
 .workItem .projectTextContainer {
   width: 49%;
 }
+.workItem .projectImgContainer {
+  -webkit-transition: scale 0.4s ease-in-out;
+  transition: scale 0.4s ease-in-out;
+}
+.workItem .projectImgContainer:hover {
+  scale: 1.03;
+}
 .workItem .projectTextContainer h3 {
   display: block;
 }
