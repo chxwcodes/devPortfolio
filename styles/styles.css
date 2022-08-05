@@ -813,7 +813,7 @@ header span::after {
   width: 33%;
 }
 .aboutTextContainer p {
-  width: 65%;
+  width: 63.5%;
 }
 .aboutTextContainer span {
   position: relative;
@@ -977,7 +977,7 @@ footer h2::after {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .workItem:last-child {
   margin-bottom: 0;
