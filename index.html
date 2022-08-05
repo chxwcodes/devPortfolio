@@ -26,6 +26,9 @@
     <!-- dev icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
+    <!-- AOS stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="./styles/styles.css">
 
@@ -90,11 +93,11 @@
         <!-- ABOUT SECTION -->
         <section id="about" class="about">
             <div class="wrapper">
-                <h2>About Me</h2>
+                <h2 data-aos="fade-down">About Me</h2>
 
                 <div class="aboutContent">
                     <!-- about img container -->
-                    <div class="aboutImgContainer">
+                    <div class="aboutImgContainer" data-aos="fade-down">
                         <!-- about image -->
                         <div class="headerImageContainer">
                             <img src="./images/banner-img.png" alt="A backshot of Chow in a baseball hat">
@@ -103,9 +106,9 @@
                     
                     <!-- about text container -->
                     <div class="aboutTextContainer">
-                        <h4>Oh, hello there. <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" title="&#128075; &#128075; &#128075;">&#127754;</a> Thanks for stopping by my corner of the web. I'm <span>Chow C</span>, a creative soul residing in the Greater Toronto Area.</h4>
+                        <h4 data-aos="fade-right">Oh, hello there. <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" title="&#128075; &#128075; &#128075;">&#127754;</a> Thanks for stopping by my corner of the web. I'm <span>Chow C</span>, a creative soul residing in the Greater Toronto Area.</h4>
                     
-                        <p>I'm a Front-End Web Developer currently using my tech stack in order to bring my creative ideas to life. I come from a background of graphic design and retail management. I have a strong eye for visual design, effective visual communication, UI/UX design, and solving problems quick on my feet. I hope to combine my design knowledge together with code in order to develop meaningful and beautiful web applications. <code>&lt;aside&gt;</code> from coding, you can find me playing video games with friends, admiring/building mech keebs, or sipping way too much bubble tea.</p>
+                        <p data-aos="fade-left">I'm a Front-End Web Developer currently using my tech stack in order to bring my creative ideas to life. I come from a background of graphic design and retail management. I have a strong eye for visual design, effective visual communication, UI/UX design, and solving problems quick on my feet. I hope to combine my design knowledge together with code in order to develop meaningful and beautiful web applications. <code>&lt;aside&gt;</code> from coding, you can find me playing video games with friends, admiring/building mech keebs, or sipping way too much bubble tea.</p>
                     </div> <!--END aboutTextContainer-->
                 </div> <!--END about content-->     
             </div> <!--END wrapper-->
@@ -114,22 +117,22 @@
         <!-- SKILLS SECTION -->
         <section id="skills" class="skills">
             <div class="wrapper">
-                <h2>My Skills</h2>
+                <h2 data-aos="fade-down">My Skills</h2>
 
                 <!-- skills icon -->
                 <ul>
-                    <li><i class="fa-brands fa-html5" aria-hidden="true"></i>HTML5</li>
-                    <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i>CSS3</li>
-                    <li><i class="fa-brands fa-sass" aria-hidden="true"></i>Sass</li>
-                    <li><i class="fa-brands fa-js" aria-hidden="true"></i>Javascript</li>
-                    <li><i class="devicon-jquery-plain" aria-hidden="true"></i>jQuery</li>
-                    <li><i class="fa-solid fa-server" aria-hidden="true"></i>REST API</li>
-                    <li><i class="devicon-firebase-plain" aria-hidden="true"></i>Firebase</li>
-                    <li><i class="devicon-react-original" aria-hidden="true"></i>React</li>
-                    <li><i class="fa-brands fa-git-alt" aria-hidden="true"></i>Git</li>
-                    <li><i class="fa-brands fa-github" aria-hidden="true"></i>Github</li>
-                    <li><i class="devicon-photoshop-plain" aria-hidden="true"></i>Adobe Suites</li>
-                    <li><i class="fa-brands fa-figma" aria-hidden="true"></i>Figma</li>
+                    <li data-aos="fade-down-right"><i class="fa-brands fa-html5" aria-hidden="true"></i>HTML5</li>
+                    <li data-aos="fade-down-right"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i>CSS3</li>
+                    <li data-aos="zoom-in"><i class="fa-brands fa-sass" aria-hidden="true"></i>Sass</li>
+                    <li data-aos="fade-left"><i class="fa-brands fa-js" aria-hidden="true" ></i>Javascript</li>
+                    <li data-aos="fade-left"><i class="devicon-jquery-plain" aria-hidden="true"></i>jQuery</li>
+                    <li data-aos="fade-up-right"><i class="fa-solid fa-server" aria-hidden="true"></i>REST API</li>
+                    <li data-aos="fade-up-right"><i class="devicon-firebase-plain" aria-hidden="true"></i>Firebase</li>
+                    <li data-aos="zoom-in"><i class="devicon-react-original" aria-hidden="true"></i>React</li>
+                    <li data-aos="fade-up-left"><i class="fa-brands fa-git-alt" aria-hidden="true"></i>Git</li>
+                    <li data-aos="fade-up-left"><i class="fa-brands fa-github" aria-hidden="true"></i>Github</li>
+                    <li data-aos="fade-up"><i class="devicon-photoshop-plain" aria-hidden="true"></i>Adobe Suites</li>
+                    <li data-aos="fade-up"><i class="fa-brands fa-figma" aria-hidden="true"></i>Figma</li>
                 </ul>
                 <!--END skills icon-->
             </div><!--END wrapper-->
@@ -139,9 +142,75 @@
         <!-- PROJECTS SECTION -->
         <section id="projects" class="projects">
             <div class="wrapper">
-                <h2>My Projects</h2>               
+                <h2 data-aos="fade-down">My Projects</h2>               
 
-                <!-- JS POPULATE PROJECT GOES HERE :) -->
+                <!-- PROJECT 1 -->
+                <article class="workItem">
+                    <!-- project image -->
+                    <div class="projectImgContainer" data-aos="fade-down-left">
+                        <video src="./images/urban-score.mp4" autoplay loop playsinline muted></video>
+                    </div> <!--END projectImgContainer-->
+                
+                    <!-- project text -->
+                    <div class="projectTextContainer" data-aos="fade-down-right">
+                        <h3>Urban Score</h3>
+                        <p class="projectTools">HTML5 / Sass / Javascript / REST API / Pair Programming</p>
+                
+                        <p>Urban City is an app that's powered by vanilla Javascript and REST API. It has all the world's urban cities.
+                            Based on your selected city, it will give a score based on that city's quality of life. It measures
+                            everything from housing to education. You can save as many cities as you wish to compare.</p>
+                
+                        <div class="projectLinks">
+                            <a href="https://urban-score.netlify.app/" class="cyanButton">View live</a>
+                            <a href="https://github.com/Max-Chow-project2/urban-score" class="blackButtonOutline">View repo</a>
+                        </div>
+                    </div><!--END projectTextContainer-->
+                </article><!--END project 1-->
+                
+                <!-- PROJECT 2 -->
+                <article class="workItem">
+                    <!-- project image -->
+                    <div class="projectImgContainer" data-aos="fade-down-right">
+                        <img src="./images/frame.svg" alt="">
+                    </div><!--END projectImgContainer-->
+                
+                    <!-- project 2 text -->
+                    <div class="projectTextContainer" data-aos="fade-down-left">
+                        <h3>GameLogo+</h3>
+                        <p class="projectTools">HTML5 / Sass / jQuery /Photoshop</p>
+                
+                        <p>A fun quiz powered by jQuery that tests your knowledge of various video game studios' logos. Logos have been
+                            altered with Adobe Photoshop to be extra hard. Can you guess them all?</p>
+                
+                        <div class="projectLinks">
+                            <a href="https://gamelogoquiz.netlify.app/" class="cyanButton">View live</a>
+                            <a href="https://github.com/chxwcodes/gameStudioQuiz" class="blackButtonOutline">View repo</a>
+                        </div>
+                    </div><!--END projectTextContainer-->
+                </article><!--END project 2-->
+                
+                <!-- PROJECT 3 -->
+                <article class="workItem">
+                    <!-- project image -->
+                    <div class="projectImgContainer" data-aos="fade-down-left">
+                        <img src="./images/frame.svg" alt="">
+                    </div><!--END projectImgContainer-->
+                
+                    <!-- project 3 text -->
+                    <div class="projectTextContainer" data-aos="fade-down-right">
+                        <h3>What's 4 Dinnr?</h3>
+                        <p class="projectTools">HTML5 / Sass / jQuery /REST API</p>
+                
+                        <p>Tired and can't decide on what to make for dinner? Want to get rid of whatever foods that's left over in your
+                            fridge before grocery shopping? Let this app decide for you based on what you have in your fridge! It also
+                            considers your calories and dietary restrictions.</p>
+                
+                        <div class="projectLinks">
+                            <a href="https://gamelogoquiz.netlify.app/" class="cyanButton">View live</a>
+                            <a href="https://github.com/chxwcodes/gameStudioQuiz" class="blackButtonOutline">View repo</a>
+                        </div>
+                    </div><!--END projectTextContainer-->
+                </article><!--END project 3-->
             </div> <!--END wrapper-->
         </section> <!--END PROJECT SECTION-->
     </main> <!--END MAIN SECTION-->
@@ -150,7 +219,7 @@
     <!-- FOOTER SECTION -->
     <footer>
         <!-- CONTACT FORM SECTION -->
-        <section id="contact" class="contact">
+        <section id="contact" class="contact" data-aos="fade-up">
             <div class="wrapper">
                 <h2>Contact Me</h2>
 
@@ -209,9 +278,12 @@
         
         <!-- COPYRIGHT TEXT -->
         <div class="wrapper">
-            <p class="copyright">&copy; Chow C 2022</p>
+            <p class="copyright">Copyright &copy; Chow C 2022</p>
         </div> <!--END copyright text-->
     </footer> <!--END footer-->
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- JAVASCRIPT -->
     <script src="./script.js"></script>

@@ -1287,6 +1287,7 @@ form textarea {
 @media (max-width: 700px) {
   header {
     height: 100vh;
+    background-image: url("../images/blob-bg-mobile.svg");
   }
   .CTALinks {
     -webkit-box-orient: vertical;
