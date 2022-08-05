@@ -92,3 +92,18 @@ button {
     }
 }
 
+.sendSuccess {
+    @include buttonStyle(#05d671, $white, #05d671);
+
+    &:hover {
+        cursor: wait;
+    }
+}
+
+.sendFail {
+    @include buttonStyle(#ec1e24, $white, #ec1e24);
+
+    &:hover {
+        cursor: wait;
+    }
+}

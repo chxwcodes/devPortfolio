@@ -171,15 +171,40 @@ portfolio.handleFormSubmission = () => {
         }).then(response => {
             if (response.ok) {
                 buttonEl.innerText = "Email sent";
+                buttonEl.disabled = true;
+                buttonEl.classList.remove('redButton');
+                buttonEl.classList.add('sendSuccess');
+
+                setTimeout(() => {
+                    buttonEl.innerText = "Send Message";
+                    buttonEl.disabled = false;
+                    buttonEl.classList.remove('sendSuccess');
+                    buttonEl.classList.add('redButton');
+                }, 2500);
+
                 form.reset();
             } else {
                 throw new Error (response.statusText);
             }
         }).catch(error => {
-            alert(error.message);
+            buttonEl.innerText = "Error, try again";
+            buttonEl.disabled = true;
+            buttonEl.classList.remove('redButton');
+            buttonEl.classList.add('sendFail');
+
+            setTimeout(() => {
+                buttonEl.innerText = "Send Message";
+                buttonEl.disabled = false;
+                buttonEl.classList.remove('sendFail');
+                buttonEl.classList.add('redButton');
+            }, 2500);
         });
     }
+    
     formEl.addEventListener("submit", handleSubmit);
+
+    
+    
 }
 
 portfolio.init = () => {
@@ -188,6 +213,28 @@ portfolio.init = () => {
     portfolio.mobileMenu();
     portfolio.populateProjects();
     portfolio.handleFormSubmission();
+
+    console.log('%cWhat comes first, the chicken or the egg?', 'color: #40cae0; font-size: 30px;')
+    console.log(`
+                                                                        
+                                ████████                                  
+                              ██        ██                                
+                            ██▒▒▒▒        ██                              
+                          ██▒▒▒▒▒▒      ▒▒▒▒██                            
+                          ██▒▒▒▒▒▒      ▒▒▒▒██                            
+                        ██  ▒▒▒▒        ▒▒▒▒▒▒██                          
+                        ██                ▒▒▒▒██                          
+                      ██▒▒      ▒▒▒▒▒▒          ██                        
+                      ██      ▒▒▒▒▒▒▒▒▒▒        ██                        
+                      ██      ▒▒▒▒▒▒▒▒▒▒    ▒▒▒▒██                        
+                      ██▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒██                        
+                        ██▒▒▒▒  ▒▒▒▒▒▒    ▒▒▒▒██                          
+                        ██▒▒▒▒            ▒▒▒▒██                          
+                          ██▒▒              ██                            
+                            ████        ████                              
+                                ████████                                  
+                         
+`)
 }
 
 portfolio.init();

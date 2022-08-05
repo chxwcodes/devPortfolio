@@ -418,6 +418,38 @@ button:hover {
   border: 2px solid #40cae0;
 }
 
+.sendSuccess {
+  display: inline-block;
+  background-color: #05d671;
+  color: #fbfafa;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid #05d671;
+  -webkit-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, border 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, border 0.4s ease-in-out;
+}
+.sendSuccess:hover {
+  cursor: wait;
+}
+
+.sendFail {
+  display: inline-block;
+  background-color: #ec1e24;
+  color: #fbfafa;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid #ec1e24;
+  -webkit-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, border 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, border 0.4s ease-in-out;
+}
+.sendFail:hover {
+  cursor: wait;
+}
+
 @-webkit-keyframes blinking {
   0% {
     opacity: 1;
