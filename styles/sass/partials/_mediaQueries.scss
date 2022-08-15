@@ -157,7 +157,6 @@
 @media (max-width: 700px) {
     //HEADER SECTION
     header {
-        height: 100vh;
         background-image: url('../images/blob-bg-mobile.svg');
     }
 
@@ -228,5 +227,11 @@
     //FOOTER SECTION
     .footerContainer {
         width: 100%;
+    }
+}
+
+@media (max-height: 680px) {
+    header {
+        height: 700px;
     }
 }

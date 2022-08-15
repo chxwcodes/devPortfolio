@@ -652,7 +652,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 85vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1290,7 +1290,6 @@ form textarea {
 }
 @media (max-width: 700px) {
   header {
-    height: 100vh;
     background-image: url("../images/blob-bg-mobile.svg");
   }
   .CTALinks {
@@ -1350,5 +1349,10 @@ footer::before {
   }
   .footerContainer {
     width: 100%;
+  }
+}
+@media (max-height: 680px) {
+  header {
+    height: 700px;
   }
 }
