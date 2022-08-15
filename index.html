@@ -50,7 +50,7 @@
             <!-- Nav content -->
             <nav>
                 <!-- HAMBURGER BTN -->
-                <div class="mobileMenu" id="hamburger">
+                <div class="mobileMenu" tabindex="0" id="hamburger">
                     <span class="topBun"></span>
                     <span class="meat"></span>
                     <span class="bottomBun"></span>
@@ -142,10 +142,32 @@
         <!-- PROJECTS SECTION -->
         <section id="projects" class="projects">
             <div class="wrapper">
-                <h2 data-aos="fade-down">My Projects</h2>               
+                <h2 data-aos="fade-down">My Projects</h2>   
+                
+                <!-- PROJECT 0 -->
+                <article class="workItem" data-aos="fade-right">
+                    <!-- project image -->
+                    <div class="projectImgContainer">
+                        <video src="./images/trivia-me.mp4" autoplay loop playsinline muted></video>
+                    </div>
+                    <!--END projectImgContainer-->
+                
+                    <!-- project text -->
+                    <div class="projectTextContainer">
+                        <h3>Trivia Me</h3>
+                        <code class="projectTools">JSX / React / Firebase / REST API </code>
+                
+                        <p>Trivia Me is a game powered by REST API and React.js. Users can test themselves in a wide range of topics ranging from video games to anime. Match scores are then stored in Firebase, which is then sorted by latest to oldest. A solo coding project.</p>
+                
+                        <div class="projectLinks">
+                            <a href="https://trivia-me.netlify.app/" target="_blank" class="cyanButton">View live</a>
+                            <a href="https://github.com/chxwcodes/project3-trivia" target="_blank" class="blackButtonOutline">View repo</a>
+                        </div>
+                    </div>  <!--END projectTextContainer-->
+                </article> <!--END project 0-->
 
                 <!-- PROJECT 1 -->
-                <article class="workItem" data-aos="fade-right">
+                <article class="workItem" data-aos="fade-down">
                     <!-- project image -->
                     <div class="projectImgContainer">
                         <video src="./images/urban-score.mp4" autoplay loop playsinline muted></video>
@@ -168,7 +190,7 @@
                 </article><!--END project 1-->
                 
                 <!-- PROJECT 2 -->
-                <article class="workItem" data-aos="fade-down">
+                <article class="workItem" data-aos="fade-right">
                     <!-- project image -->
                     <div class="projectImgContainer">
                         <video src="./images/gamelogo.mp4" autoplay loop playsinline muted></video>
@@ -190,7 +212,7 @@
                 </article><!--END project 2-->
                 
                 <!-- PROJECT 3 -->
-                <article class="workItem" data-aos="fade-right">
+                <article class="workItem" data-aos="fade-down">
                     <!-- project image -->
                     <div class="projectImgContainer">
                         <img src="./images/frame.svg" alt="">
