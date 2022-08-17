@@ -748,7 +748,7 @@ header span::after {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-.CTALinks button {
+.CTALinks a:nth-child(2) {
   margin-left: 20px;
 }
 
