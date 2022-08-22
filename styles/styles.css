@@ -1301,8 +1301,9 @@ form textarea {
   .CTALinks a:first-child {
     margin-bottom: 10px;
   }
-  .CTALinks button {
+  .CTALinks a:nth-child(2) {
     margin-left: 0;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
