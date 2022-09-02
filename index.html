@@ -1,318 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CH✖WCH✖N</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CH✖WCH✖N</title>
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#ed1e24">
-    <meta name="msapplication-TileColor" content="#00a300">
-    <meta name="theme-color" content="#101011">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#ed1e24">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#101011">
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/acf2ac11d5.js" crossorigin="anonymous"></script>
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/acf2ac11d5.js" crossorigin="anonymous"></script>
 
-    <!-- dev icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+	<!-- dev icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-    <!-- AOS stylesheet -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- AOS stylesheet -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="./styles/styles.css">
-
-
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-    <!-- SKIP LINK -->
-    <a href="#mainContent" class="skipLink">Skip to main content &#128640;</a>
+	<!-- SKIP LINK -->
+	<a href="#mainContent" class="skipLink">Skip to main content &#128640;</a>
 
-    <!-- NAV SECTION -->
-    <nav id="navBar" class="navBar">
-        <div class="wrapper">
-            <!-- Logo image -->
-            <div class="logoImgContainer">
-                <a href="/"><img src="./images/cclogo.svg" alt="Chow's personal logo"></a>
-            </div>
+	<!-- NAV SECTION -->
+	<nav id="navBar" class="navBar">
+		<div class="wrapper">
+			<!-- Logo image -->
+			<div class="logoImgContainer">
+				<a href="/"><img src="./images/cclogo.svg" alt="Chow's personal logo"></a>
+			</div>
 
-            <!-- Nav content -->
-            <nav>
-                <!-- HAMBURGER BTN -->
-                <div class="mobileMenu" tabindex="0" id="hamburger">
-                    <span class="topBun"></span>
-                    <span class="meat"></span>
-                    <span class="bottomBun"></span>
-                </div>
+			<!-- Nav content -->
+			<nav>
+				<!-- HAMBURGER BTN -->
+				<div class="mobileMenu" tabindex="0" id="hamburger">
+					<span class="topBun"></span>
+					<span class="meat"></span>
+					<span class="bottomBun"></span>
+				</div>
 
-                <!-- nav content links -->
-                <ul class="navLinks" id="navLinks">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li class="specialNav"><a href="#contact">Contact</a></li>
-                </ul> <!--END navLinks-->
-            </nav> <!--END nav content-->
-        </div> <!--END wrapper-->
-    </nav> <!--END navBar -->
+				<!-- nav content links -->
+				<ul class="navLinks" id="navLinks">
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li class="specialNav"><a href="#contact">Contact</a></li>
+				</ul> <!--END navLinks-->
+			</nav> <!--END nav content-->
+		</div> <!--END wrapper-->
+	</nav> <!--END navBar -->
 
-    <!-- HEADER SECTION -->
-    <header>
-        <div class="wrapper">
-            <!-- header text -->
-            <div class="headerTextContainer">
+	<!-- HEADER SECTION -->
+	<header>
+		<div class="wrapper">
+			<!-- header text -->
+			<div class="headerTextContainer">
+				<h1>
+					Hi! I'm Chow, a Front End Developer & <span class="sr-only">Designer.</span>
+				</h1>
+				<p class="h1" aria-hidden="true">&nbsp;<span id="typewriter"></span>&nbsp;</p>
 
-                <h1>
-                    Hi! I'm Chow, a Front End Developer & <span class="sr-only">Designer.</span>
-                </h1>
-                <p class="h1" aria-hidden="true">&nbsp;<span id="typewriter"></span>&nbsp;</p>
+				<div class="CTALinks">
+					<a href="#projects" class="cyanButton"><i class="fa-solid fa-code" aria-label="hidden"></i> Projects</a>
+					<a href="#contact" class="cyanButtonOutline"><i class="fa-solid fa-download" aria-label="hidden"></i> Resume</a>
+				</div> <!--END cta links-->
+			</div> <!--END headerTextContainer-->
+		</div> <!--END wrapper-->
+		<!-- MOUSE -->
+		<div class="mouse"></div>
+	</header> <!--END header section -->
 
-                <div class="CTALinks">
-                    <a href="#projects" class="cyanButton"><i class="fa-solid fa-code" aria-label="hidden"></i> Projects</a>
-                    <a href="#contact" class="cyanButtonOutline"><i class="fa-solid fa-download" aria-label="hidden"></i> Resume</a>
-                </div> <!--END cta links-->
-            </div> <!--END headerTextContainer-->
-        </div> <!--END wrapper-->
-        <!-- MOUSE -->
-        <div class="mouse"></div>
-    </header> <!--END header section -->
+	<!-- MAIN SECTION -->
+	<main id="mainContent">
+		<!-- ABOUT SECTION -->
+		<section id="about" class="about">
+			<div class="wrapper">
+				<h2 data-aos="fade-down">About Me</h2>
 
-    <!-- MAIN SECTION -->
-    <main id="mainContent">
-        <!-- ABOUT SECTION -->
-        <section id="about" class="about">
-            <div class="wrapper">
-                <h2 data-aos="fade-down">About Me</h2>
+				<div class="aboutContent">
+					<!-- about img container -->
+					<div class="aboutImgContainer" data-aos="fade-down">
+						<!-- about image -->
+						<div class="headerImageContainer">
+							<img src="./images/banner-img.png" alt="A backshot of Chow in a baseball hat">
+						</div>
+					</div> <!--END about image-->
+					
+					<!-- about text container -->
+					<div class="aboutTextContainer">
+						<h4 data-aos="fade-right">Oh, hello there. <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" title="&#128075; &#128075; &#128075;">&#127754;</a> Thanks for stopping by my corner of the web. I'm <span>Chow C</span>, a creative soul residing in the Greater Toronto Area.</h4>
+				
+						<p data-aos="fade-up">I'm a Front-End Web Developer currently using my tech stack in order to bring my creative ideas to life. I come from a background of graphic design and retail management. I have a strong eye for visual design, effective visual communication, UI/UX design, and solving problems quickly on my feet. I hope to combine my design knowledge together with code in order to develop meaningful and beautiful web applications. <code>&lt;aside&gt;</code> from coding, you can also find me playing video games, admiring/building mech keebs, or sipping way too much bubble tea.</p>
+					</div> <!--END aboutTextContainer-->
+				</div> <!--END about content-->     
+			</div> <!--END wrapper-->
+		</section> <!--END about section-->
 
-                <div class="aboutContent">
-                    <!-- about img container -->
-                    <div class="aboutImgContainer" data-aos="fade-down">
-                        <!-- about image -->
-                        <div class="headerImageContainer">
-                            <img src="./images/banner-img.png" alt="A backshot of Chow in a baseball hat">
-                        </div>
-                    </div> <!--END about image-->
-                    
-                    <!-- about text container -->
-                    <div class="aboutTextContainer">
-                        <h4 data-aos="fade-right">Oh, hello there. <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" title="&#128075; &#128075; &#128075;">&#127754;</a> Thanks for stopping by my corner of the web. I'm <span>Chow C</span>, a creative soul residing in the Greater Toronto Area.</h4>
-                    
-                        <p data-aos="fade-up">I'm a Front-End Web Developer currently using my tech stack in order to bring my creative ideas to life. I come from a background of graphic design and retail management. I have a strong eye for visual design, effective visual communication, UI/UX design, and solving problems quickly on my feet. I hope to combine my design knowledge together with code in order to develop meaningful and beautiful web applications. <code>&lt;aside&gt;</code> from coding, you can also find me playing video games, admiring/building mech keebs, or sipping way too much bubble tea.</p>
-                    </div> <!--END aboutTextContainer-->
-                </div> <!--END about content-->     
-            </div> <!--END wrapper-->
-        </section> <!--END about section-->
+			<!-- SKILLS SECTION -->
+			<section id="skills" class="skills">
+				<div class="wrapper">
+					<h2 data-aos="fade-down">My Skills</h2>
 
-        <!-- SKILLS SECTION -->
-        <section id="skills" class="skills">
-            <div class="wrapper">
-                <h2 data-aos="fade-down">My Skills</h2>
-
-                <!-- skills icon -->
-                <ul>
-                    <li data-aos="fade-down-right"><i class="fa-brands fa-html5" aria-hidden="true"></i>HTML5</li>
-                    <li data-aos="fade-down-right"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i>CSS3</li>
-                    <li data-aos="zoom-in"><i class="fa-brands fa-sass" aria-hidden="true"></i>Sass</li>
-                    <li data-aos="fade-down"><i class="fa-brands fa-js" aria-hidden="true" ></i>Javascript</li>
-                    <li data-aos="fade-down"><i class="devicon-jquery-plain" aria-hidden="true"></i>jQuery</li>
-                    <li data-aos="fade-up-right"><i class="fa-solid fa-server" aria-hidden="true"></i>REST API</li>
-                    <li data-aos="fade-up-right"><i class="devicon-firebase-plain" aria-hidden="true"></i>Firebase</li>
-                    <li data-aos="zoom-in"><i class="devicon-react-original" aria-hidden="true"></i>React</li>
-                    <li data-aos="fade-up"><i class="fa-brands fa-git-alt" aria-hidden="true"></i>Git</li>
-                    <li data-aos="fade-up"><i class="fa-brands fa-github" aria-hidden="true"></i>Github</li>
-                    <li data-aos="fade-up"><i class="devicon-photoshop-plain" aria-hidden="true"></i>Adobe Suites</li>
-                    <li data-aos="fade-up"><i class="fa-brands fa-figma" aria-hidden="true"></i>Figma</li>
-                </ul>
-                <!--END skills icon-->
-            </div><!--END wrapper-->
-        </section>
-
-
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="projects">
-            <div class="wrapper">
-                <h2 data-aos="fade-down">My Projects</h2>   
-                
-                <!-- PROJECT 0 -->
-                <article class="workItem" data-aos="fade-right">
-                    <!-- project image -->
-                    <div class="projectImgContainer">
-                        <video src="./images/trivia-me.mp4" autoplay loop playsinline muted></video>
-                    </div>
-                    <!--END projectImgContainer-->
-                
-                    <!-- project text -->
-                    <div class="projectTextContainer">
-                        <h3>Trivia Me</h3>
-                        <code class="projectTools">React / Firebase / REST API / Routing </code>
-                
-                        <p>Trivia Me is a game powered by REST API and React.js. Users can test themselves in a wide range of topics ranging from video games to anime. Match scores are then stored in Firebase. Users can then choose how to view the saved scores (most recent, highest score, etc). A solo coding project.</p>
-                
-                        <div class="projectLinks">
-                            <a href="https://trivia-me.netlify.app/" target="_blank" class="cyanButton">View live</a>
-                            <a href="https://github.com/chxwcodes/project3-trivia/tree/production" target="_blank" class="blackButtonOutline">View repo</a>
-                        </div>
-                    </div>  <!--END projectTextContainer-->
-                </article> <!--END project 0-->
-
-                <!-- PROJECT 1 -->
-                <article class="workItem" data-aos="fade-down">
-                    <!-- project image -->
-                    <div class="projectImgContainer">
-                        <video src="./images/urban-score.mp4" autoplay loop playsinline muted></video>
-                    </div> <!--END projectImgContainer-->
-                
-                    <!-- project text -->
-                    <div class="projectTextContainer">
-                        <h3>Urban Score</h3>
-                        <code class="projectTools">HTML5 / Sass / Javascript / REST API / Pair Programming</code>
-                
-                        <p>Urban City is an app that's powered by vanilla Javascript and REST API. It has all the world's urban cities.
-                            Based on your selected city, it will give a score based on that city's quality of life. It measures
-                            everything from housing to education. You can save as many cities as you wish to compare.</p>
-                
-                        <div class="projectLinks">
-                            <a href="https://urban-score.netlify.app/" target="_blank" class="cyanButton">View live</a>
-                            <a href="https://github.com/Max-Chow-project2/urban-score" target="_blank" class="blackButtonOutline">View repo</a>
-                        </div>
-                    </div><!--END projectTextContainer-->
-                </article><!--END project 1-->
-                
-                <!-- PROJECT 2 -->
-                <article class="workItem" data-aos="fade-right">
-                    <!-- project image -->
-                    <div class="projectImgContainer">
-                        <video src="./images/gamelogo.mp4" autoplay loop playsinline muted></video>
-                    </div><!--END projectImgContainer-->
-                
-                    <!-- project 2 text -->
-                    <div class="projectTextContainer">
-                        <h3>GameLogo+</h3>
-                        <code class="projectTools">HTML5 / Sass / jQuery / Photoshop</code>
-                
-                        <p>A fun quiz powered by jQuery that tests your knowledge of various video game studios' logos. Logos have been
-                            altered with Adobe Photoshop to be extra hard. Can you guess them all?</p>
-                
-                        <div class="projectLinks">
-                            <a href="https://gamelogoquiz.netlify.app/" target="_blank" class="cyanButton">View live</a>
-                            <a href="https://github.com/chxwcodes/gameStudioQuiz" target="_blank" class="blackButtonOutline">View repo</a>
-                        </div>
-                    </div><!--END projectTextContainer-->
-                </article><!--END project 2-->
-                
-                <!-- PROJECT 3 -->
-                <article class="workItem" data-aos="fade-down">
-                    <!-- project image -->
-                    <div class="projectImgContainer">
-                        <video src="./images/whats4dinnr.mp4" autoplay loop playsinline muted></video>
-                    </div><!--END projectImgContainer-->
-                
-                    <!-- project 3 text -->
-                    <div class="projectTextContainer">
-                        <h3>What's 4 Dinnr?</h3>
-                        <code class="projectTools">HTML5 / Sass / jQuery / REST API</code>
-                
-                        <p>Tired and can't decide on what to make for dinner? Want to get rid of whatever foods that's left over in your fridge? Let this app decide for you based on what you have in your fridge! It also considers your calories and dietary restrictions, if the user has any. Worked together with a UI designer (design provided).</p>
-                
-                        <div class="projectLinks">
-                            <a href="https://whats4dinnr.netlify.app/" target="_blank" class="cyanButton">View live</a>
-                            <a href="https://github.com/chxwcodes/whats4dinnr" target="_blank" class="blackButtonOutline">View repo</a>
-                        </div>
-                    </div><!--END projectTextContainer-->
-                </article><!--END project 3-->
-            </div> <!--END wrapper-->
-        </section> <!--END PROJECT SECTION-->
-    </main> <!--END MAIN SECTION-->
+					<!-- skills icon -->
+					<ul>
+						<li data-aos="fade-down-right"><i class="fa-brands fa-html5" aria-hidden="true"></i>HTML5</li>
+						<li data-aos="fade-down-right"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i>CSS3</li>
+						<li data-aos="zoom-in"><i class="fa-brands fa-sass" aria-hidden="true"></i>Sass</li>
+						<li data-aos="fade-down"><i class="fa-brands fa-js" aria-hidden="true" ></i>Javascript</li>
+						<li data-aos="fade-down"><i class="devicon-jquery-plain" aria-hidden="true"></i>jQuery</li>
+						<li data-aos="fade-up-right"><i class="fa-solid fa-server" aria-hidden="true"></i>REST API</li>
+						<li data-aos="fade-up-right"><i class="devicon-firebase-plain" aria-hidden="true"></i>Firebase</li>
+						<li data-aos="zoom-in"><i class="devicon-react-original" aria-hidden="true"></i>React</li>
+						<li data-aos="fade-up"><i class="fa-brands fa-git-alt" aria-hidden="true"></i>Git</li>
+						<li data-aos="fade-up"><i class="fa-brands fa-github" aria-hidden="true"></i>Github</li>
+						<li data-aos="fade-up"><i class="devicon-photoshop-plain" aria-hidden="true"></i>Adobe Suites</li>
+						<li data-aos="fade-up"><i class="fa-brands fa-figma" aria-hidden="true"></i>Figma</li>
+					</ul>
+					<!--END skills icon-->
+				</div><!--END wrapper-->
+			</section>
 
 
-    <!-- FOOTER SECTION -->
-    <footer>
-        <!-- CONTACT FORM SECTION -->
-        <section id="contact" class="contact">
-            <div class="wrapper"  data-aos="fade-up">
-                <h2>Contact Me</h2>
+		<!-- PROJECTS SECTION -->
+		<section id="projects" class="projects">
+			<div class="wrapper">
+				<h2 data-aos="fade-down">My Projects</h2>   
+				
+			</div> <!--END wrapper-->
+		</section> <!--END PROJECT SECTION-->
+	</main> <!--END MAIN SECTION-->
 
-                <!-- FOOTER INFO CONTAINER -->
-                <div class="footerContainer">
-                    <!-- CONTACT TEXT CONTAINER -->
-                    <div class="contactTextContainer">
-                        <h4>Feel free to drop an email regarding my projects, to request my resume, or if you just want to have a chat about video games over some bubble tea.</h4>
-                    
-                        <!-- FOOTER SOCIAL LINKS -->
-                        <ul class="footerLinks">
-                            <li>
-                                <a href="https://github.com/chxwcodes" target="_blank">
-                                    <i class="fa-brands fa-github" aria-hidden="true"></i>
-                                    <span class="sr-only">Link to github</span>
-                                </a>
-                            </li>
-                
-                            <li>
-                                <a href="https://www.linkedin.com/in/chxw/" target="_blank">
-                                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-                                    <span class="sr-only">Link to linkedin</span>
-                                </a>
-                            </li>
-                
-                            <li>
-                                <a href="https://calendly.com/chxw/30min" target="_blank">
-                                    <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
-                                    <span class="sr-only">Link to calendly</span>
-                                </a>
-                            </li>
+	<!-- FOOTER SECTION -->
+	<footer>
+		<!-- CONTACT FORM SECTION -->
+		<section id="contact" class="contact">
+			<div class="wrapper"  data-aos="fade-up">
+				<h2>Contact Me</h2>
 
-                            <li>
-                                <a href="mailto:contact.chxw@gmail.com">
-                                    <i class="fa-solid fa-at" aria-hidden="true"></i>
-                                    <span class="sr-only">Link to email</span>
-                                </a>
-                            </li>
-                        </ul><!--END footer social links-->
-                    </div><!--END contacttextcontainer-->
-                    
-                    <!-- CONTACT FORM -->
-                    <form action="https://formspree.io/f/mqkjzwgo" method="POST" id="form">
-                        <!-- name input -->
-                        <label for="name" class="sr-only">Name</label>
-                        <input type="text" id="name" placeholder="Name" name="name" required>
-                    
-                        <!-- email input -->
-                        <label for="email" class="sr-only">Email</label>
-                        <input type="email" id="email" placeholder="Email" name="email" required>
-                    
-                        <!-- message input -->
-                        <label for="message" class="sr-only">Message</label>
-                        <textarea id="message" cols="30" rows="10" placeholder="I found the Easter Egg in your portfolio :^)" name="message"></textarea>
-                    
-                        <!-- submit btn -->
-                        <button type="submit" class="redButton" id="sendEmail">Send Message</button>
-                    </form>
-                    <!--END form-->
-                </div> <!--END footer info container-->      
-            </div><!--END wrapper-->
-        </section> <!--END Contact form section-->
-        
-        <!-- COPYRIGHT TEXT -->
-        <div class="wrapper">
-            <p class="copyright">Copyright &copy; Chow C 2022</p>
-        </div> <!--END copyright text-->
-    </footer> <!--END footer-->
+				<!-- FOOTER INFO CONTAINER -->
+				<div class="footerContainer">
+					<!-- CONTACT TEXT CONTAINER -->
+					<div class="contactTextContainer">
+						<h4>Feel free to drop an email regarding my projects, to request my resume, or if you just want to have a chat about video games over some bubble tea.</h4>
+						
+						<!-- FOOTER SOCIAL LINKS -->
+						<ul class="footerLinks">
+							<li>
+								<a href="https://github.com/chxwcodes" target="_blank">
+									<i class="fa-brands fa-github" aria-hidden="true"></i>
+									<span class="sr-only">Link to github</span>
+								</a>
+							</li>
+	
+							<li>
+								<a href="https://www.linkedin.com/in/chxw/" target="_blank">
+									<i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+									<span class="sr-only">Link to linkedin</span>
+								</a>
+							</li>
+	
+							<li>
+								<a href="https://calendly.com/chxw/30min" target="_blank">
+									<i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+									<span class="sr-only">Link to calendly</span>
+								</a>
+							</li>
 
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+							<li>
+								<a href="https://www.behance.net/chxw" target="_blank">
+									<i class="fa-brands fa-behance" aria-hidden="true"></i>
+									<span class="sr-only">Link to behance</span>
+								</a>
+							</li>
+						</ul><!--END footer social links-->
+						</div><!--END contacttextcontainer-->
+						
+						<!-- CONTACT FORM -->
+						<form action="https://formspree.io/f/mqkjzwgo" method="POST" id="form">
+							<!-- name input -->
+							<label for="name" class="sr-only">Name</label>
+							<input type="text" id="name" placeholder="Name" name="name" required>
+					
+							<!-- email input -->
+							<label for="email" class="sr-only">Email</label>
+							<input type="email" id="email" placeholder="Email" name="email" required>
+					
+							<!-- message input -->
+							<label for="message" class="sr-only">Message</label>
+							<textarea id="message" cols="30" rows="10" placeholder="I found the Easter Egg in your portfolio :^)" name="message"></textarea>
+					
+							<!-- submit btn -->
+							<button type="submit" class="redButton" id="sendEmail">Send Message</button>
+						</form>
+						<!--END form-->
+				</div> <!--END footer info container-->      
+			</div><!--END wrapper-->
+		</section> <!--END Contact form section-->
+		
+		<!-- COPYRIGHT TEXT -->
+		<div class="wrapper">
+			<a href="#" class="beamMeUp">Back to Top</a>
+			<p class="copyright">Copyright &copy; Chow C 2022</p>
+		</div> <!--END copyright text-->
+	</footer> <!--END footer-->
 
-    <!-- JAVASCRIPT -->
-    <script src="./script.js"></script>
+	<!-- AOS -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+	<!-- JAVASCRIPT -->
+	<script src="./script.js"></script>
 </body>
 </html>

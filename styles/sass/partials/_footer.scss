@@ -82,9 +82,17 @@ form {
     }
 }
 
-.copyright {
+.copyright,
+.beamMeUp {
     font-size: 0.8rem;
     text-align: center;
     color: $gray;
     padding: 5px 0;
+}
+
+.beamMeUp {
+    font-weight: 700;
+    color: $cyan;
+    margin: 0;
+    padding: 0;
 }
