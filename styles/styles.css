@@ -1052,6 +1052,14 @@ footer h4 {
   color: #fbfafa;
   margin-bottom: 20px;
 }
+footer h4 a {
+  color: #40cae0;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+footer h4 a:hover {
+  color: #fa3c64;
+}
 
 .footerContainer {
   display: -webkit-box;

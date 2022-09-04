@@ -23,6 +23,15 @@ footer {
     h4 {
         color: $white;
         margin-bottom: 20px;
+
+        a {
+            color: $cyan;
+            transition: color 0.4s ease-in-out;
+
+            &:hover {
+                color: $red;
+            }
+        }
     }
 }
 
