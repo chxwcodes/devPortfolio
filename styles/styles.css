@@ -1139,6 +1139,9 @@ form textarea {
   border-bottom: 5px solid #b5c8ca;
   font-family: "Open Sans", sans-serif;
 }
+form .redButton {
+  margin-top: 20px;
+}
 
 .copyright,
 .beamMeUp {
