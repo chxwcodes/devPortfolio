@@ -191,7 +191,14 @@
 						</div><!--END contacttextcontainer-->
 						
 						<!-- CONTACT FORM -->
-						<form action="https://formspree.io/f/mqkjzwgo" method="POST" id="form">
+						<form 
+							action="https://formspree.io/f/mqkjzwgo" 
+							method="POST"
+							data-netlify-recaptcha="true"
+							data-netlify="true"
+							id="form"
+						>
+						
 							<!-- name input -->
 							<label for="name" class="sr-only">Name</label>
 							<input type="text" id="name" placeholder="Name" name="name" required>
@@ -202,7 +209,10 @@
 					
 							<!-- message input -->
 							<label for="message" class="sr-only">Message</label>
-							<textarea id="message" cols="30" rows="10" placeholder="I found the Easter Egg in your portfolio :^)" name="message"></textarea>
+							<textarea id="message" cols="30" rows="10" placeholder="I found the Easter Egg in your portfolio :^)" name="message" required></textarea>
+
+							<!-- captcha input -->
+							<div data-netlify-recaptcha="true"></div>
 					
 							<!-- submit btn -->
 							<button type="submit" class="redButton" id="sendEmail">Send Message</button>
