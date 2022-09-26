@@ -116,7 +116,7 @@ portfolio.myProjects = [
 		animate: 'fade-right',
 		asset: './images/trivia-me.mp4',
 		title: 'Trivia Me',
-		tools: 'React / Firebase / REST API / Routing',
+		tools: 'React / Firebase / REST API',
 		desc: `Trivia Me is a game powered by REST API and React.js. Users can test themselves in a wide range of topics ranging from video games to anime. Match scores are then stored in Firebase. Users can then choose how to view the saved scores (most recent, highest score, etc). A solo coding project.`,
 		liveURL: 'https://trivia-me.netlify.app/',
 		repoURL: 'https://github.com/chxwcodes/project3-trivia/tree/production'
@@ -241,7 +241,7 @@ AOS.init({
 	delay: 0, // values from 0 to 3000, with step 50ms
 	duration: 800, // values from 0 to 3000, with step 50ms
 	easing: 'ease-in-out', // default easing for AOS animations
-	once: true, // whether animation should happen only once - while scrolling down
+	once: false, // whether animation should happen only once - while scrolling down
 	mirror: true, // whether elements should animate out while scrolling past them
 	anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
