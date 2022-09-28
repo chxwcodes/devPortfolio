@@ -116,7 +116,7 @@ portfolio.myProjects = [
 		animate: 'fade-right',
 		asset: './images/trivia-me.mp4',
 		title: 'Trivia Me',
-		tools: 'React / Firebase / REST API',
+		tools: 'Javascript / React / Firebase / REST API',
 		desc: `Trivia Me is a game powered by REST API and React.js. Users can test themselves in a wide range of topics ranging from video games to anime. Match scores are then stored in Firebase. Users can then choose how to view the saved scores (most recent, highest score, etc). A solo coding project.`,
 		liveURL: 'https://trivia-me.netlify.app/',
 		repoURL: 'https://github.com/chxwcodes/project3-trivia/tree/production'
