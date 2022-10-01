@@ -182,44 +182,50 @@ portfolio.handleFormSubmission = () => {
 		e.preventDefault();
 		const buttonEl = document.querySelector('#sendEmail');
 		const formData = new FormData(e.target);
-        
-		fetch('/', {
-			method: 'POST',
-			body: new URLSearchParams(formData).toString(),
-			headers: {
-				'Content-Type': 'application/x-www-form-urlencoded'
+
+		// if captcha is checked, submit the form
+		if (grecaptcha.getResponse().length > 0) {
+			fetch('/', {
+				method: 'POST',
+				body: new URLSearchParams(formData).toString(),
+				headers: {
+					'Content-Type': 'application/x-www-form-urlencoded'
 				}
-		}).then(response => {
-			if (response.ok) {
-				buttonEl.innerText = 'Email sent';
+			}).then(response => {
+				if (response.ok) {
+					buttonEl.innerText = 'Email sent';
+					buttonEl.disabled = true;
+					buttonEl.classList.remove('redButton');
+					buttonEl.classList.add('sendSuccess');
+
+					setTimeout(() => {
+						buttonEl.innerText = 'Send Message';
+						buttonEl.disabled = false;
+						buttonEl.classList.remove('sendSuccess');
+						buttonEl.classList.add('redButton');
+					}, 2500);
+
+					form.reset();
+				} else {
+					throw new Error(response.statusText);
+				}
+			}).catch(() => {
+				buttonEl.innerText = 'Error, try again';
 				buttonEl.disabled = true;
 				buttonEl.classList.remove('redButton');
-				buttonEl.classList.add('sendSuccess');
+				buttonEl.classList.add('sendFail');
 
 				setTimeout(() => {
 					buttonEl.innerText = 'Send Message';
 					buttonEl.disabled = false;
-					buttonEl.classList.remove('sendSuccess');
+					buttonEl.classList.remove('sendFail');
 					buttonEl.classList.add('redButton');
 				}, 2500);
-
-				form.reset();
-			} else {
-				throw new Error (response.statusText);
-			}
-		}).catch(() => {
-			buttonEl.innerText = 'Error, try again';
-			buttonEl.disabled = true;
-			buttonEl.classList.remove('redButton');
-			buttonEl.classList.add('sendFail');
-
-			setTimeout(() => {
-				buttonEl.innerText = 'Send Message';
-				buttonEl.disabled = false;
-				buttonEl.classList.remove('sendFail');
-				buttonEl.classList.add('redButton');
-			}, 2500);
-		});
+			});
+		} else {
+			alert('Please complete to reCaptcha to send the email.');
+		}
+        
 	}    
 	formEl.addEventListener('submit', handleSubmit);
 }
