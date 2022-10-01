@@ -180,48 +180,59 @@ portfolio.handleFormSubmission = () => {
 
 	async function handleSubmit(e) {
 		e.preventDefault();
-		const buttonEl = document.querySelector("#sendEmail");
-		const data = new FormData(e.target);
-        
-		fetch(e.target.action, {
-			method: form.method,
-			body: data,
-			headers: {
-				'Accept': 'application/json'
+		const buttonEl = document.querySelector('#sendEmail');
+		const formData = new FormData(e.target);
+
+		// if captcha is checked, submit the form
+		if (grecaptcha.getResponse().length > 0) {
+			fetch('/', {
+				method: 'POST',
+				body: new URLSearchParams(formData).toString(),
+				headers: {
+					'Content-Type': 'application/x-www-form-urlencoded'
 				}
-		}).then(response => {
-			if (response.ok) {
-				buttonEl.innerText = "Email sent";
+			}).then(response => {
+				if (response.ok) {
+					buttonEl.innerText = 'Email sent';
+					buttonEl.disabled = true;
+					buttonEl.classList.remove('redButton');
+					buttonEl.classList.add('sendSuccess');
+
+					setTimeout(() => {
+						buttonEl.innerText = 'Send Message';
+						buttonEl.disabled = false;
+						buttonEl.classList.remove('sendSuccess');
+						buttonEl.classList.add('redButton');
+					}, 2500);
+
+					form.reset();
+				} else {
+					throw new Error(response.statusText);
+				}
+			}).catch(() => {
+				buttonEl.innerText = 'Error, try again';
 				buttonEl.disabled = true;
 				buttonEl.classList.remove('redButton');
-				buttonEl.classList.add('sendSuccess');
+				buttonEl.classList.add('sendFail');
 
 				setTimeout(() => {
-					buttonEl.innerText = "Send Message";
+					buttonEl.innerText = 'Send Message';
 					buttonEl.disabled = false;
-					buttonEl.classList.remove('sendSuccess');
+					buttonEl.classList.remove('sendFail');
 					buttonEl.classList.add('redButton');
 				}, 2500);
-
-				form.reset();
-			} else {
-				throw new Error (response.statusText);
-			}
-		}).catch(error => {
-			buttonEl.innerText = "Error, try again";
-			buttonEl.disabled = true;
-			buttonEl.classList.remove('redButton');
-			buttonEl.classList.add('sendFail');
+			});
+		} else {
+			const errorEl = document.querySelector('.errorMsg');
+			errorEl.style.display = 'block';
 
 			setTimeout(() => {
-				buttonEl.innerText = "Send Message";
-				buttonEl.disabled = false;
-				buttonEl.classList.remove('sendFail');
-				buttonEl.classList.add('redButton');
+				errorEl.style.display = 'none';
 			}, 2500);
-		});
+		}
+        
 	}    
-	formEl.addEventListener("submit", handleSubmit);
+	formEl.addEventListener('submit', handleSubmit);
 }
 
 AOS.init({
