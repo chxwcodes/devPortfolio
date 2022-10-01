@@ -223,7 +223,12 @@ portfolio.handleFormSubmission = () => {
 				}, 2500);
 			});
 		} else {
-			alert('Please complete to reCaptcha to send the email.');
+			const errorEl = document.querySelector('.errorMsg');
+			errorEl.style.display = 'block';
+
+			setTimeout(() => {
+				errorEl.style.display = 'none';
+			}, 2500);
 		}
         
 	}    

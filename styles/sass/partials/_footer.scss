@@ -35,6 +35,13 @@ footer {
     }
 }
 
+.errorMsg {
+    color: $red;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    display: none;
+}
+
 .footerContainer {
     @include flexRow;
     justify-content: space-between;
@@ -90,9 +97,9 @@ form {
         font-family: $bodyFont;
     }
 
-    div {
-        margin-bottom: 20px;
-    }
+	.redButton {
+		margin-top: 20px;
+	}
 }
 
 .copyright,

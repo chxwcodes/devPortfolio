@@ -94,6 +94,7 @@ button {
 
 .sendSuccess {
     @include buttonStyle(#05d671, $white, #05d671);
+    margin-top: 20px;
 
     &:hover {
         cursor: wait;
