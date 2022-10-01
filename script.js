@@ -180,24 +180,24 @@ portfolio.handleFormSubmission = () => {
 
 	async function handleSubmit(e) {
 		e.preventDefault();
-		const buttonEl = document.querySelector("#sendEmail");
-		const data = new FormData(e.target);
+		const buttonEl = document.querySelector('#sendEmail');
+		const formData = new FormData(e.target);
         
-		fetch(e.target.action, {
-			method: form.method,
-			body: data,
+		fetch('/', {
+			method: 'POST',
+			body: new URLSearchParams(formData).toString(),
 			headers: {
-				'Accept': 'application/json'
+				'Content-Type': 'application/x-www-form-urlencoded'
 				}
 		}).then(response => {
 			if (response.ok) {
-				buttonEl.innerText = "Email sent";
+				buttonEl.innerText = 'Email sent';
 				buttonEl.disabled = true;
 				buttonEl.classList.remove('redButton');
 				buttonEl.classList.add('sendSuccess');
 
 				setTimeout(() => {
-					buttonEl.innerText = "Send Message";
+					buttonEl.innerText = 'Send Message';
 					buttonEl.disabled = false;
 					buttonEl.classList.remove('sendSuccess');
 					buttonEl.classList.add('redButton');
@@ -207,21 +207,21 @@ portfolio.handleFormSubmission = () => {
 			} else {
 				throw new Error (response.statusText);
 			}
-		}).catch(error => {
-			buttonEl.innerText = "Error, try again";
+		}).catch(() => {
+			buttonEl.innerText = 'Error, try again';
 			buttonEl.disabled = true;
 			buttonEl.classList.remove('redButton');
 			buttonEl.classList.add('sendFail');
 
 			setTimeout(() => {
-				buttonEl.innerText = "Send Message";
+				buttonEl.innerText = 'Send Message';
 				buttonEl.disabled = false;
 				buttonEl.classList.remove('sendFail');
 				buttonEl.classList.add('redButton');
 			}, 2500);
 		});
 	}    
-	formEl.addEventListener("submit", handleSubmit);
+	formEl.addEventListener('submit', handleSubmit);
 }
 
 AOS.init({
