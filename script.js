@@ -159,7 +159,7 @@ portfolio.populateProjects = () => {
 		projectContainer.setAttribute('data-aos', project.animate);
 		projectContainer.innerHTML = `
 			<div class="projectImgContainer">
-				<video src=${project.asset} autoplay loop playsinline muted></video>
+					<video src=${project.asset} autoplay loop playsinline muted></video>
 			</div>
 			<div class="projectTextContainer">
 				<h3>${project.title}</h3>
