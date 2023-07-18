@@ -962,6 +962,16 @@ footer h2::after {
 .projects {
   padding-top: 0;
 }
+.projects .emph {
+  font-family: "Shadows Into Light", cursive;
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  line-height: 1;
+  position: relative;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
 
 .workItem {
   display: -webkit-box;
@@ -1211,8 +1221,8 @@ form .redButton {
 }
 @media (max-width: 800px) {
   .about .wrapper,
-.skills .wrapper,
-.projects .wrapper {
+  .skills .wrapper,
+  .projects .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1311,7 +1321,7 @@ form .redButton {
     text-align: left;
   }
   .workItem .projectImgContainer,
-.workItem .projectTextContainer {
+  .workItem .projectTextContainer {
     width: 100%;
   }
 }
@@ -1341,8 +1351,8 @@ form .redButton {
     width: 95%;
   }
   .skills::before,
-.skills::after,
-footer::before {
+  .skills::after,
+  footer::before {
     height: 100px;
     background-size: 100% 100px;
   }

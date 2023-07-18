@@ -125,7 +125,7 @@ portfolio.myProjects = [
 		animate: 'fade-down',
 		asset: './images/urban-score.mp4',
 		title: 'Urban Score',
-		tools: 'HTML5 / Sass / Javascript / REST API / Pair Programming',
+		tools: 'Javascript / REST API / Pair Programming',
 		desc: `Urban City is an app that's powered by vanilla Javascript and REST API. It has all the world's urban cities. Based on your selected city, it will give a score based on that city's quality of life. It measures everything from housing to education. You can save as many cities as you wish to compare.`,
 		liveURL: 'https://urban-score.netlify.app/',
 		repoURL: 'https://github.com/Max-Chow-project2/urban-score'
@@ -134,7 +134,7 @@ portfolio.myProjects = [
 		animate: 'fade-right',
 		asset: './images/gamelogo.mp4',
 		title: 'GameLogo+',
-		tools: 'HTML5 / Sass / jQuery / Photoshop',
+		tools: 'HTML / Sass / jQuery / Photoshop',
 		desc: `A fun quiz powered by jQuery that tests your knowledge of various video game studios' logos. Logos have been altered with Adobe Photoshop to be extra hard. Can you guess them all?`,
 		liveURL: 'https://gamelogoquiz.netlify.app/',
 		repoURL: 'https://github.com/chxwcodes/gameStudioQuiz'
@@ -143,7 +143,7 @@ portfolio.myProjects = [
 		animate: 'fade-down',
 		asset: './images/whats4dinnr.mp4',
 		title: `What's 4 Dinnr?`,
-		tools: 'HTML5 / Sass / jQuery / REST API',
+		tools: 'HTML / Sass / jQuery / REST API',
 		desc: `Tired and can't decide on what to make for dinner? Want to get rid of whatever foods that's left over in your fridge? Let this app decide for you based on what you have in your fridge! It also considers your calories and dietary restrictions, if the user has any. Worked together with a UI designer (design provided).`,
 		liveURL: 'https://whats4dinnr.netlify.app/',
 		repoURL: 'https://github.com/chxwcodes/whats4dinnr'
