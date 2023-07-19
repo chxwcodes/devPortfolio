@@ -451,6 +451,17 @@ button:hover {
   cursor: wait;
 }
 
+.emph {
+  font-family: "Shadows Into Light", cursive;
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  line-height: 1;
+  position: relative;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
 @-webkit-keyframes blinking {
   0% {
     opacity: 1;
@@ -962,16 +973,6 @@ footer h2::after {
 .projects {
   padding-top: 0;
 }
-.projects .emph {
-  font-family: "Shadows Into Light", cursive;
-  display: inline-block;
-  width: 80px;
-  text-align: center;
-  line-height: 1;
-  position: relative;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
-}
 
 .workItem {
   display: -webkit-box;
@@ -1106,6 +1107,9 @@ footer h4 a:hover {
           align-items: flex-end;
   width: 30%;
   text-align: right;
+}
+.contactTextContainer span {
+  color: #fa3c64;
 }
 
 .footerLinks {
@@ -1295,7 +1299,7 @@ form .redButton {
             flex-direction: column;
   }
   .aboutTextContainer h4 {
-    text-align: center;
+    text-align: left;
     width: 100%;
     margin-bottom: 20px;
   }

@@ -53,6 +53,10 @@ footer {
     align-items: flex-end;
     width: 30%;
     text-align: right;
+
+    span{
+        color: $red;
+    }
 }
 
 

@@ -138,16 +138,16 @@ portfolio.myProjects = [
 		desc: `A fun quiz powered by jQuery that tests your knowledge of various video game studios' logos. Logos have been altered with Adobe Photoshop to be extra hard. Can you guess them all?`,
 		liveURL: 'https://gamelogoquiz.netlify.app/',
 		repoURL: 'https://github.com/chxwcodes/gameStudioQuiz'
-	},
-	{
-		animate: 'fade-down',
-		asset: './images/whats4dinnr.mp4',
-		title: `What's 4 Dinnr?`,
-		tools: 'HTML / Sass / jQuery / REST API',
-		desc: `Tired and can't decide on what to make for dinner? Want to get rid of whatever foods that's left over in your fridge? Let this app decide for you based on what you have in your fridge! It also considers your calories and dietary restrictions, if the user has any. Worked together with a UI designer (design provided).`,
-		liveURL: 'https://whats4dinnr.netlify.app/',
-		repoURL: 'https://github.com/chxwcodes/whats4dinnr'
 	}
+	// {
+	// 	animate: 'fade-down',
+	// 	asset: './images/whats4dinnr.mp4',
+	// 	title: `What's 4 Dinnr?`,
+	// 	tools: 'HTML / Sass / jQuery / REST API',
+	// 	desc: `Tired and can't decide on what to make for dinner? Want to get rid of whatever foods that's left over in your fridge? Let this app decide for you based on what you have in your fridge! It also considers your calories and dietary restrictions, if the user has any. Worked together with a UI designer (design provided).`,
+	// 	liveURL: 'https://whats4dinnr.netlify.app/',
+	// 	repoURL: 'https://github.com/chxwcodes/whats4dinnr'
+	// }
 ]
 
 portfolio.populateProjects = () => {
